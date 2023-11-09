@@ -18,10 +18,6 @@
 * [**Testing**](<#testing>)
 * [**Current Features**](<#current-features>)
     * [Common Features](<#common-features>)
-    * [Home Page](<#home-page>)
-    * [History Page](<#history-page>)
-    * [Visit Page](<#visit-page>)
-    * [Contact Page](<#contact-page>)
 * [**Deployment**](<#deployment>)
     * [Deploying](<#deploying>)
     * [Forking](<#forking>)
@@ -52,12 +48,6 @@ I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pa
 
 ![]()
 
-**
-
-![]()
-
-**
-
 **Colour Scheme** <a name="colour-scheme"></a>
 
 By using the [Coolors]() website, I was able to select a colour palette that would be suitable for all users and visually appealing.
@@ -67,12 +57,6 @@ By using the [Coolors]() website, I was able to select a colour palette that wou
 **Typography** <a name="typography"></a>
 
 Google Fonts was used to select a blend of fonts which would compliment each other and be accessible for all.
-
-![]()
-
-![]()
-
-![]()
 
 ![]()
 
