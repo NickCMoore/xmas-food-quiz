@@ -7,6 +7,10 @@
     font-family: 'Caveat', serif;
 }
 
+body {
+    color: #fff;
+}
+
 .main {
     min-height: 100vh;
     background: url(/assets/images/Christmas_meal_main.jpg);
