@@ -18,3 +18,23 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.game-area {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-content h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
