@@ -58,7 +58,7 @@ body {
 }
 
 .game-content .start-button:hover {
-    background: #08415C;
+    background: #6B818C;
 }
 
 .rules-display {
@@ -76,6 +76,11 @@ body {
 .rules-display h2 {
     font-size: 70px;
     text-align: center;
+}
+
+.rules-display.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .rules-display .rules {
