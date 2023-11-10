@@ -51,12 +51,11 @@ resultsDisplay.onclick = () => {
 
 // Quits to home screen
 exitButton.onclick = () => {
-    resultsDisplay.classList.remove('active');
-    main.classList.add('active');
+    resultsDisplay.classList.add('active');
+    main.classList.remove('active');
 }
 
 // Returns player to first question in quiz
 tryAgainButton.onclick = () => {
-    resultsDisplay.classList.remove('active');
-    questionDisplay.classList.add('active');
+    main.classList.remove('active');
 }
