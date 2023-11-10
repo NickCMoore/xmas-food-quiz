@@ -136,3 +136,147 @@ body {
     background: #6B818C;
     color: #000;
 }
+
+.question-display {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    border-radius: 10px;
+    width: 975px;
+    background: #CC2936;
+    padding: 10px 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.question-display h3 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.question-display.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.question-display .multiple-choice-area {
+    display: inline-block;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.question-display .question-buttons {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.question-display .question-buttons .quit-button {
+    height: 55px;
+    width: 190px;
+    text-align: center;
+    background: #08415C;
+    border: 4px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.question-display .question-buttons .quit-button:hover {
+    background: #6B818C;
+    color: #000;
+}
+
+.question-display .question-buttons .continue-button {
+    height: 55px;
+    width: 190px;
+    text-align: center;
+    background: #08415C;
+    border: 4px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.question-display .question-buttons .continue-button:hover {
+    background: #6B818C;
+    color: #000;
+}
+
+.results-display {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    border-radius: 10px;
+    width: 975px;
+    background: #CC2936;
+    padding: 10px 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.results-display h3 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.results-display.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.results-display .final-user-score-message {
+    display: inline-block;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.results-display .finished-buttons {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.results-display .finished-buttons .quit-button {
+    height: 55px;
+    width: 190px;
+    text-align: center;
+    background: #08415C;
+    border: 4px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.results-display .finished-buttons .quit-button:hover {
+    background: #6B818C;
+    color: #000;
+}
+
+.results-display .finished-buttons .try-again-button {
+    height: 55px;
+    width: 190px;
+    text-align: center;
+    background: #08415C;
+    border: 4px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rules-display .rules-buttons .try-again-button:hover {
+    background: #6B818C;
+    color: #000;
+}
