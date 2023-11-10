@@ -15,6 +15,8 @@
 </head>
 
 <body>
+
+    <!-- Home Screen Display -->
     <main class="main">
         <section class="game-area">
             <div class="game-content">
@@ -27,24 +29,66 @@
         </section>
     </main>
 
+    <!-- Rules Display -->
     <div class="rules-display">
         <h2>Rules</h2>
         <br>
-        <span class="rules">1. This is a multiple-choice quiz. You must select the correct answer from the options for each question.</span>
+        <span class="rules">1. This is a multiple-choice quiz. You must select the correct answer from the options for
+            each question.</span>
         <span class="rules">2. Respond to each multiple-choice question within the allotted time.</span>
-        <span class="rules">3. You earn points for each correct answer. Incorrect answers will result in zero points!</span>
+        <span class="rules">3. You earn points for each correct answer. Incorrect answers will result in zero
+            points!</span>
         <span class="rules">4. You must answer each question before moving on to the next.</span>
         <br>
         <span class="rules">Good luck!</span>
-        
 
-
+        <!-- Rules Buttons -->
         <div class="rules-buttons">
             <button class="quit-button">Exit</button>
             <a href="#" class="rules-button continue-button">Continue</a>
         </div>
-
     </div>
+
+    <!-- Question Display -->
+    <div class="question-display">
+        <div>
+            <h3>Question<span class="question-number">1</span>
+            </h3>
+
+            <!-- Question Images -->
+            <img>
+        </div>
+
+        <!-- Mulitple Choice Area -->
+        <div class="multiple-choice-area">
+            <button class="answer-option" id="optionA">Option A</button>
+            <button class="answer-option" id="optionB">Option B</button>
+            <button class="answer-option" id="optionC">Option C</button>
+            <button class="answer-option" id="optionD">Option D</button>
+        </div>
+
+        <!-- Quiz Score Area -->
+        <div class="score-display">
+            <h3><span id="player-score">0</span></h3>
+        </div>
+
+        <!-- Question Navigation Buttons -->
+        <div class="rules-buttons">
+            <button class="quit-button">Exit</button>
+            <a href="#" class="rules-button continue-button">Continue</a>
+        </div>
+    </div>
+
+    <!-- Finished Quiz Display -->
+    <div class="results-dislay">
+        <p id="final-user-score-message"></p> <span id="final-user-score">0</span></p>
+        <!-- Finished Quiz Buttons -->
+        <div class="finished-buttons">
+            <button class="quit-button">Exit</button>
+            <a href="#" class="finished-buttons try-again-button">Continue</a>
+        </div>
+    </div>
+
     <script src="assets/scripts/script.js"></script>
 </body>
 
