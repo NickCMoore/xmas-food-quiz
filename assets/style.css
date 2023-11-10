@@ -48,7 +48,7 @@ body {
 .game-content .start-button {
     height: 55px;
     width: 190px;
-    background: #89BD9E;
+    background: #CC2936;
     border: 4px;
     border-radius: 10px;
     font-size: 40px;
@@ -58,5 +58,54 @@ body {
 }
 
 .game-content .start-button:hover {
-    background: #3C153B;
+    background: #08415C;
+}
+
+.rules-display {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 10px;
+    width: 975px;
+    background: #CC2936;
+    padding: 10px 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.rules-display h2 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.rules-display .rules {
+    display: inline-block;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.rules-display .rules-buttons {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.rules-display .rules-buttons .rules-button {
+    height: 55px;
+    width: 190px;
+    text-align: center;
+    background: #08415C;
+    border: 4px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rules-display .rules-buttons .rules-button:hover {
+    background: #6B818C;
+    color: #000;
 }
