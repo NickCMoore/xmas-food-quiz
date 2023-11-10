@@ -173,7 +173,7 @@ body {
     margin: 30px;
 }
 
-.question-display .question-buttons .quit-button {
+.question-display .question-buttons .question-quit-button {
     height: 55px;
     width: 190px;
     text-align: center;
@@ -186,7 +186,7 @@ body {
     cursor: pointer;
 }
 
-.question-display .question-buttons .quit-button:hover {
+.question-display .question-buttons .question-quit-button:hover {
     background: #6B818C;
     color: #000;
 }
@@ -276,7 +276,7 @@ body {
     cursor: pointer;
 }
 
-.rules-display .rules-buttons .try-again-button:hover {
+.results-display .rules-buttons .try-again-button:hover {
     background: #6B818C;
     color: #000;
 }
