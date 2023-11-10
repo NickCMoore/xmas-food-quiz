@@ -191,7 +191,7 @@ body {
     color: #000;
 }
 
-.question-display .question-buttons .continue-button {
+.question-display .question-buttons .next-button {
     height: 55px;
     width: 190px;
     text-align: center;
@@ -204,7 +204,7 @@ body {
     cursor: pointer;
 }
 
-.question-display .question-buttons .continue-button:hover {
+.question-display .question-buttons .next-button:hover {
     background: #6B818C;
     color: #000;
 }
@@ -245,7 +245,7 @@ body {
     margin: 30px;
 }
 
-.results-display .finished-buttons .quit-button {
+.results-display .finished-buttons .exit-button {
     height: 55px;
     width: 190px;
     text-align: center;
@@ -258,7 +258,7 @@ body {
     cursor: pointer;
 }
 
-.results-display .finished-buttons .quit-button:hover {
+.results-display .finished-buttons .exit-button:hover {
     background: #6B818C;
     color: #000;
 }
@@ -276,7 +276,7 @@ body {
     cursor: pointer;
 }
 
-.results-display .rules-buttons .try-again-button:hover {
+.results-display .finished-buttons .try-again-button:hover {
     background: #6B818C;
     color: #000;
 }
