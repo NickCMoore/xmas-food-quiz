@@ -14,18 +14,21 @@ let questionCount = 0;
 
 // Shows game rules
 startButton.onclick = () => {
+    console.log('Start button clicked');
     rulesDisplay.classList.add('active');
     main.classList.add('active');
 }
 
 // Quits to home screen
 quitButton.onclick = () => {
+    console.log('Quit button clicked');
     rulesDisplay.classList.remove('active');
     main.classList.remove('active');
 }
 
 // Starts quiz
 continueButton.onclick = () => {
+    console.log('Continue button clicked');
     questionDisplay.classList.add('active');
     rulesDisplay.classList.remove('active');
     showQuestions(0);
@@ -33,11 +36,13 @@ continueButton.onclick = () => {
 
 // Quits to home screen
 questionQuitButton.onclick = () => {
+    console.log('Question Quit button clicked');
     questionDisplay.classList.remove('active')
     main.classList.remove('active');
 }
 
 nextButton.onclick = () => {
+    console.log('Next button clicked');
     questionCount = (questionCount + 1) % questions.length;
     showQuestions(questionCount);
 }
@@ -45,6 +50,7 @@ nextButton.onclick = () => {
 let optionList = document.querySelector('.multiple-choice-area');
 
 function showQuestions(index) {
+    console.log('Showing question:', index + 1);
     let questionText = document.querySelector('.question');
     questionText.textContent = `${questions[index].num}. ${questions[index].question}`;
     document.querySelector('#optionA').textContent = `A. ${questions[index].optionA}`;
