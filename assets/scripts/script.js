@@ -5,13 +5,14 @@ const quitButton = document.querySelector('.quit-button');
 const main = document.querySelector('.main');
 const continueButton = document.querySelector('.continue-button');
 const questionDisplay = document.querySelector('.question-display')
+const nextButton = document.querySelector('.next-button')
 const questionQuitButton = document.querySelector('.question-quit-button')
-const nextButton = document.querySelector('.next-button');
-const resultsDisplay = document.querySelector('.results-display')
-const exitButton = document.querySelector('.exit-button')
-const tryAgainButton = document.querySelector('.try-again-button')
+
+
 
 //Event handlers
+
+let questionCount = 0;
 
 // Shows game rules
 startButton.onclick = () => {
@@ -29,6 +30,7 @@ quitButton.onclick = () => {
 continueButton.onclick = () => {
     questionDisplay.classList.add('active');
     rulesDisplay.classList.remove('active');
+    showQuestions(0);
 }
 
 // Quits to home screen
@@ -37,33 +39,27 @@ questionQuitButton.onclick = () => {
     main.classList.remove('active');
 }
 
-// Moves to next question
 nextButton.onclick = () => {
-    questionDisplay.classList.remove('active')
-    resultsDisplay.classList.add('active');
+    questionCount = (questionCount + 1) % questions.length;
+    showQuestions(questionCount);
 }
 
-// Shows player final score
-resultsDisplay.onclick = () => {
-    questionDisplay.classList.remove('active');
-    resultsDisplay.classList.add('active')
-}
+let optionList = document.querySelector('.multiple-choice-area');
 
-// Quits to home screen
-exitButton.onclick = () => {
-    resultsDisplay.classList.add('active');
-    main.classList.remove('active');
-}
-
-// Returns player to first question in quiz
-tryAgainButton.onclick = () => {
-    main.classList.remove('active');
+function showQuestions(index) {
+    let questionText = document.querySelector('.question');
+    questionText.textContent = `${questions[index].num}. ${questions[index].question}`;
+    document.querySelector('.optionA').textContent = `A. ${questions[index].optionA}`;
+    document.querySelector('.optionB').textContent = `B. ${questions[index].optionB}`;
+    document.querySelector('.optionC').textContent = `C. ${questions[index].optionC}`;
+    document.querySelector('.optionD').textContent = `D. ${questions[index].optionD}`;
 }
 
 //Questions
 
 let questions = [
     {
+        num: 1,
         question: "What is the main meat dish traditionally served on Christmas in the United States?",
         optionA: "Ham",
         optionB: "Turkey",
@@ -73,6 +69,7 @@ let questions = [
     },
 
     {
+        num: 2,
         question: "Which popular Christmas beverage is made from eggs, sugar, milk, and nutmeg?",
         optionA: "Hot Chocolate",
         optionB: "Eggnog",
@@ -82,6 +79,7 @@ let questions = [
     },
 
     {
+        num: 3,
         question: "In which country did the tradition of gingerbread houses originate?",
         optionA: "Germany",
         optionB: "France",
@@ -91,6 +89,7 @@ let questions = [
     },
 
     {
+        num: 4,
         question: "Which popular Christmas beverage is made from eggs, sugar, milk, and nutmeg?",
         optionA: "Hot Chocolate",
         optionB: "Eggnog",
@@ -100,6 +99,7 @@ let questions = [
     },
 
     {
+        num: 5,
         question: "What is the name of the special cake traditionally eaten in Italy during the Christmas season?",
         optionA: "Stollen",
         optionB: "Panettone",
@@ -109,6 +109,7 @@ let questions = [
     },
 
     {
+        num: 6,
         question: "What is a Christmas pudding also known as in the UK?",
         optionA: "Figgy Pudding",
         optionB: "Plum Pudding",
@@ -118,6 +119,7 @@ let questions = [
     },
 
     {
+        num: 7,
         question: "What type of nuts are commonly associated with Christmas and are often roasted and enjoyed during the holiday season?",
         optionA: "Walnuts",
         optionB: "Almonds",
@@ -127,6 +129,7 @@ let questions = [
     },
 
     {
+        num: 8,
         question: "What is the main ingredient in the traditional Swedish Christmas dish 'Janssons frestelse'?",
         optionA: "Salmon",
         optionB: "Herring",
@@ -136,6 +139,7 @@ let questions = [
     },
 
     {
+        num: 9,
         question: "Which spice is a key ingredient in the classic gingerbread cookie?",
         optionA: "Cinnamon",
         optionB: "Nutmeg",
@@ -145,6 +149,7 @@ let questions = [
     },
 
     {
+        num: 10,
         question: "What is the name of the French Christmas dessert that consists of puff pastry layers filled with almond cream?",
         optionA: "Yule Log",
         optionB: "Bûche de Noël",
@@ -154,6 +159,7 @@ let questions = [
     },
 
     {
+        num: 11,
         question: "What is the traditional meat for a British Christmas dinner?",
         optionA: "Chicken",
         optionB: "Turkey",
@@ -163,6 +169,7 @@ let questions = [
     },
 
     {
+        num: 12,
         question: "What is the primary ingredient in the dish 'latkes', often enjoyed during Hanukkah?",
         optionA: "Zucchini",
         optionB: "Potatoes",
@@ -172,6 +179,7 @@ let questions = [
     },
 
     {
+        num: 13,
         question: "In which country is the Christmas delicacy 'turrón' commonly enjoyed?",
         optionA: "Italy",
         optionB: "Spain",
@@ -181,6 +189,7 @@ let questions = [
     },
 
     {
+        num: 14,
         question: "What is the main ingredient in the Italian dish 'Feast of Seven Fishes,' a traditional Christmas Eve dinner?",
         optionA: "Lobster",
         optionB: "Shrimp",
@@ -190,6 +199,7 @@ let questions = [
     },
 
     {
+        num: 15,
         question: "Which spice is a key component of the Scandinavian mulled wine known as 'glögg'?",
         optionA: "Cinnamon",
         optionB: "Cardamon",
@@ -199,6 +209,7 @@ let questions = [
     },
 
     {
+        num: 16,
         question: "What type of cake is typically served during the celebration of the Christian holiday Epiphany on January 6th?",
         optionA: "King Cake",
         optionB: "Buche de Noel",
@@ -208,6 +219,7 @@ let questions = [
     },
 
     {
+        num: 17,
         question: "Which fruit is a common ingredient in the Christmas dish 'cranberry sauce'?",
         optionA: "Blueberries",
         optionB: "Raspberries",
@@ -217,6 +229,7 @@ let questions = [
     },
 
     {
+        num: 18,
         question: "What is the name of the German Christmas bread that is often filled with nuts and dried fruits?",
         optionA: "Pfeffernusse",
         optionB: "Stollen",
@@ -226,6 +239,7 @@ let questions = [
     },
 
     {
+        num: 19,
         question: "In the United States, what type of pie is a popular dessert during the Christmas season?",
         optionA: "Pumpkin Pie",
         optionB: "Pecan Pie",
@@ -235,6 +249,7 @@ let questions = [
     },
 
     {
+        num: 20,
         question: "What is the name of the traditional Japanese Christmas cake made with sponge cake, whipped cream, and strawberries?",
         optionA: "Mochi",
         optionB: "Matcha Roll",
