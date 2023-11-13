@@ -182,6 +182,12 @@ body {
     padding: 20px;
     border: 4px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.question-display .multiple-choice-area .answer-option:hover {
+    background: #08415C;
+    color: #000;
 }
 
 .question-display .question-buttons {
