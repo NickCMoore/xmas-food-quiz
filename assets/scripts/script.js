@@ -68,6 +68,8 @@ function showQuestions(index) {
     document.querySelector('#optionB').textContent = `B. ${questions[index].optionB}`;
     document.querySelector('#optionC').textContent = `C. ${questions[index].optionC}`;
     document.querySelector('#optionD').textContent = `D. ${questions[index].optionD}`;
+
+    console.log('Finished showing question.');
 }
 
 // Event handlers based on option selected by player
@@ -109,6 +111,7 @@ function AnswerSelect(selectedOption) {
 
 function updateScore() {
     scoringTally.textContent = score;
+    console.log('Score updated:', score);
 }
 
 
