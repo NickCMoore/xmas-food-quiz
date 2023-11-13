@@ -49,10 +49,10 @@ let optionList = document.querySelector('.multiple-choice-area');
 function showQuestions(index) {
     let questionText = document.querySelector('.question');
     questionText.textContent = `${questions[index].num}. ${questions[index].question}`;
-    document.querySelector('.optionA').textContent = `A. ${questions[index].optionA}`;
-    document.querySelector('.optionB').textContent = `B. ${questions[index].optionB}`;
-    document.querySelector('.optionC').textContent = `C. ${questions[index].optionC}`;
-    document.querySelector('.optionD').textContent = `D. ${questions[index].optionD}`;
+    document.querySelector('#optionA').textContent = `A. ${questions[index].optionA}`;
+    document.querySelector('#optionB').textContent = `B. ${questions[index].optionB}`;
+    document.querySelector('#optionC').textContent = `C. ${questions[index].optionC}`;
+    document.querySelector('#optionD').textContent = `D. ${questions[index].optionD}`;
 }
 
 //Questions
