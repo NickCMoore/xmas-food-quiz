@@ -7,6 +7,7 @@ const continueButton = document.querySelector('.continue-button');
 const questionDisplay = document.querySelector('.question-display')
 const nextButton = document.querySelector('.next-button')
 const questionQuitButton = document.querySelector('.question-quit-button')
+const scoringTally = document.getElementById('player-score')
 
 //Event handlers
 
@@ -90,10 +91,16 @@ function AnswerSelect(selectedOption) {
 
     if (selectedOption === questions[questionCount].correctAnswer) {
         score += 10;
-        console.log('Correct! Current score: ' + score);
+
+        updateScore();
+        console.log('Correct Current score: ' + score);
     } else {
-        console.log('Wrong! Current score: ' + score);
+        console.log('Wrong Current score: ' + score);
     }
+}
+
+function updateScore() {
+    scoringTally.textContent = score;
 }
 
 
