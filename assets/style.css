@@ -168,7 +168,7 @@ body {
 }
 
 .question-display .multiple-choice-area {
-    display: inline-block;
+    display: flex;
     align-items: center;
     font-size: 45px;
     margin-bottom: 35px;
@@ -180,6 +180,8 @@ body {
     font-size: 35px;
     margin: 50px;
     padding: 20px;
+    border: 4px;
+    border-radius: 10px;
 }
 
 .question-display .question-buttons {
