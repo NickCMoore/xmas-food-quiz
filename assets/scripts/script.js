@@ -53,6 +53,11 @@ let optionList = document.querySelector('.multiple-choice-area');
 function showQuestions(index) {
     console.log('Showing question:', index + 1);
 
+    document.getElementById('optionA').style.backgroundColor = '';
+    document.getElementById('optionB').style.backgroundColor = '';
+    document.getElementById('optionC').style.backgroundColor = '';
+    document.getElementById('optionD').style.backgroundColor = '';
+
     let questionText = document.querySelector('.question');
     questionText.textContent = `${questions[index].question}`;
 
