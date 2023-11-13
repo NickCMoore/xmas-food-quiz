@@ -85,16 +85,19 @@ document.getElementById('optionD').addEventListener('click', function () {
 
 let score = 0;
 
-
 function AnswerSelect(selectedOption) {
     console.log('Selected Option: ' + selectedOption);
 
+    const selectedOptionElement = document.getElementById(`option${selectedOption}`);
+
     if (selectedOption === questions[questionCount].correctAnswer) {
+        selectedOptionElement.style.backgroundColor = '#4CAF50';
         score += 10;
 
         updateScore();
         console.log('Correct Current score: ' + score);
     } else {
+        selectedOptionElement.style.backgroundColor = '#FF5252';
         console.log('Wrong Current score: ' + score);
     }
 }
