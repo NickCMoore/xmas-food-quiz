@@ -11,8 +11,6 @@ const scoringTally = document.getElementById('player-score')
 
 //Event handlers
 
-let questionCount = 0;
-
 // Shows game rules
 startButton.onclick = () => {
     console.log('Start button clicked');
@@ -42,25 +40,34 @@ questionQuitButton.onclick = () => {
     main.classList.remove('active');
 }
 
+// Logs question being displayed to user
+let questionCount = 0;
+
+// Allows player to move to next question
 nextButton.onclick = () => {
     console.log('Next button clicked');
     questionCount = (questionCount + 1) % questions.length;
     showQuestions(questionCount);
 }
 
+// Access multiple choie area in DOM
 let optionList = document.querySelector('.multiple-choice-area');
 
+// Quiz changes based on user interaction
 function showQuestions(index) {
     console.log('Showing question:', index + 1);
 
+    // Updates the background colour for the option buttons
     document.getElementById('optionA').style.backgroundColor = '';
     document.getElementById('optionB').style.backgroundColor = '';
     document.getElementById('optionC').style.backgroundColor = '';
     document.getElementById('optionD').style.backgroundColor = '';
 
+    // Updates the text in the questions
     let questionText = document.querySelector('.question');
     questionText.textContent = `${questions[index].question}`;
 
+    // Updates the question number at the top
     let questionNumberElement = document.querySelector('.question-number');
     questionNumberElement.textContent = `Question ${questions[index].num}`;
 
@@ -90,17 +97,21 @@ document.getElementById('optionD').addEventListener('click', function () {
     AnswerSelect('D');
 });
 
+// Variable for updating the score
 let score = 0;
 
 function AnswerSelect(selectedOption) {
     console.log('Selected Option: ' + selectedOption);
 
+    // Accesses the option element by ID
     const selectedOptionElement = document.getElementById(`option${selectedOption}`);
 
+    // Checks if answer is right and provides feedback based on user selection
     if (selectedOption === questions[questionCount].correctAnswer) {
         selectedOptionElement.style.backgroundColor = '#4CAF50';
         score += 10;
 
+        // Path for correct and incorrect user answers
         updateScore();
         console.log('Correct Current score: ' + score);
     } else {
@@ -109,13 +120,14 @@ function AnswerSelect(selectedOption) {
     }
 }
 
+// Updates score
 function updateScore() {
     scoringTally.textContent = score;
     console.log('Score updated:', score);
 }
 
 
-//Questions
+// Question bank
 
 let questions = [
     {
