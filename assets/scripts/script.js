@@ -63,10 +63,10 @@ function showQuestions(index) {
     let questionNumberElement = document.querySelector('.question-number');
     questionNumberElement.textContent = `Question ${questions[index].num}`;
 
-    document.querySelector('#optionA').textContent = `A. ${questions[index].optionA}`;
-    document.querySelector('#optionB').textContent = `B. ${questions[index].optionB}`;
-    document.querySelector('#optionC').textContent = `C. ${questions[index].optionC}`;
-    document.querySelector('#optionD').textContent = `D. ${questions[index].optionD}`;
+    document.querySelector('#optionA').textContent = `${questions[index].optionA}`;
+    document.querySelector('#optionB').textContent = `${questions[index].optionB}`;
+    document.querySelector('#optionC').textContent = `${questions[index].optionC}`;
+    document.querySelector('#optionD').textContent = `${questions[index].optionD}`;
 
     console.log('Finished showing question.');
 }
