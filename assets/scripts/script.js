@@ -123,6 +123,13 @@ function AnswerSelect(selectedOption) {
         selectedOptionElement.style.backgroundColor = '#FF5252';
         console.log('Wrong Current score: ' + score);
     }
+
+    setTimeout(() => {
+        optionStop.forEach(button => {
+            button.disabled = false;
+            button.style.backgroundColor = '';
+        });
+    }, 3000);
 }
 
 // Updates score
