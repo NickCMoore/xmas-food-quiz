@@ -13,7 +13,7 @@ body {
 
 .main {
     min-height: 100vh;
-    background: url(/assets/images/Christmas_meal_main.jpg);
+    background-image: url(../assets/images/Christmas_meal_main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
