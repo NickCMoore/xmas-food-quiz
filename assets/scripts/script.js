@@ -156,7 +156,7 @@ let questions = [
         optionC: "Roast Beef",
         optionD: "Lamb",
         correctAnswer: "B",
-        img: "turkey.jpg", 
+        img: "turkey.jpg",
     },
 
     {
@@ -167,7 +167,7 @@ let questions = [
         optionC: "Mulled Wine",
         optionD: "Apple Cider",
         correctAnswer: "B",
-        img: ""
+        img: "drinks.jpg"
     },
 
     {
@@ -178,7 +178,7 @@ let questions = [
         optionC: "Sweden",
         optionD: "Italy",
         correctAnswer: "A",
-        img: ""
+        img: "gingerbread.jpg"
     },
 
     {
@@ -189,7 +189,7 @@ let questions = [
         optionC: "Yule Log",
         optionD: "Fruit Cake",
         correctAnswer: "B",
-        img: ""
+        img: "panetonne.jpg"
     },
 
     {
@@ -200,7 +200,7 @@ let questions = [
         optionC: "Mince Pie",
         optionD: "Christmas Cake",
         correctAnswer: "B",
-        img: ""
+        img: "pudding.jpg"
     },
 
     {
@@ -211,7 +211,7 @@ let questions = [
         optionC: "Pecans",
         optionD: "Chestnuts",
         correctAnswer: "D",
-        img: ""
+        img: "nuts.jpg"
     },
 
     {
@@ -222,7 +222,7 @@ let questions = [
         optionC: "Potatoes",
         optionD: "Meatballs",
         correctAnswer: "C",
-        img: ""
+        img: "Janssons frestelse.jpg"
     },
 
     {
@@ -233,7 +233,7 @@ let questions = [
         optionC: "Cloves",
         optionD: "Ginger",
         correctAnswer: "D",
-        img: ""
+        img: "cookie.jpg"
     },
 
     {
@@ -244,7 +244,7 @@ let questions = [
         optionC: "Galette des Rois",
         optionD: "Pain d'épices",
         correctAnswer: "B",
-        img: ""
+        img: "buche.jpg"
     },
 
     {
@@ -255,7 +255,7 @@ let questions = [
         optionC: "Pork",
         optionD: "Goose",
         correctAnswer: "B",
-        img: ""
+        img: "dinner.jpg"
     },
 
     {
@@ -266,7 +266,7 @@ let questions = [
         optionC: "Sweet Potatoes",
         optionD: "Carrots",
         correctAnswer: "B",
-        img: ""
+        img: "latkes.jpg"
     },
 
     {
@@ -277,7 +277,7 @@ let questions = [
         optionC: "Mexico",
         optionD: "Greece",
         correctAnswer: "B",
-        img: ""
+        img: "turron.jpg"
     },
 
     {
@@ -288,7 +288,7 @@ let questions = [
         optionC: "Cod",
         optionD: "Salmon",
         correctAnswer: "C",
-        img: ""
+        img: "feast.jpg"
     },
 
     {
@@ -299,7 +299,7 @@ let questions = [
         optionC: "Nutmeg",
         optionD: "Cloves",
         correctAnswer: "B",
-        img: ""
+        img: "glogg.jpg"
     },
 
     {
@@ -310,7 +310,7 @@ let questions = [
         optionC: "Rosca de Reyes",
         optionD: "Pandoro",
         correctAnswer: "C",
-        img: ""
+        img: "rosca.jpg"
     },
 
     {
@@ -321,7 +321,7 @@ let questions = [
         optionC: "Buñuelos",
         optionD: "Fruitcake",
         correctAnswer: "C",
-        img: ""
+        img: "Bunuelos.jpg"
     },
 
     {
@@ -332,7 +332,7 @@ let questions = [
         optionC: "Strawberries",
         optionD: "Cranberries",
         correctAnswer: "D",
-        img: ""
+        img: "cranberry.jpg"
     },
 
     {
@@ -343,7 +343,7 @@ let questions = [
         optionC: "Lebkuchen",
         optionD: "Springerle",
         correctAnswer: "B",
-        img: ""
+        img: "stollen.jpg"
     },
 
     {
@@ -354,7 +354,7 @@ let questions = [
         optionC: "Apple Pie",
         optionD: "Cherry Pie",
         correctAnswer: "B",
-        img: ""
+        img: "pecan.jpg"
     },
 
     {
@@ -365,7 +365,7 @@ let questions = [
         optionC: "Castella",
         optionD: "Strawberry Shortcake",
         correctAnswer: "D",
-        img: ""
+        img: "japanese.jpg"
     },
 ]
 
