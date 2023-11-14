@@ -92,6 +92,9 @@ document.getElementById('optionD').addEventListener('click', function () {
 // Stops further option selection until user clicks 'Next'
 let stopOptionsOnClick = false;
 
+// Checks whether an option has been clicked
+let optionClicked = false;
+
 function AnswerSelect(selectedOption) {
     console.log('Selected Option: ' + selectedOption);
 
@@ -121,16 +124,22 @@ function AnswerSelect(selectedOption) {
         selectedOptionElement.style.backgroundColor = '#FF5252';
         console.log('Wrong Current score: ' + score);
     }
-
+    optionClicked = true;
     stopOptionsOnClick = true;
 }
 
 // Allows player to move to next question
 nextButton.onclick = () => {
-    console.log('Next button clicked');
-    stopOptionsOnClick = false;
-    questionCount = (questionCount + 1) % questions.length;
-    showQuestions(questionCount);
+    if (optionClicked) {
+        console.log('Next button clicked');
+        stopOptionsOnClick = false;
+        questionCount = (questionCount + 1) % questions.length;
+        showQuestions(questionCount);
+
+        optionClicked = false;
+    } else {
+        console.log('Click an answer before moving forwards')
+    }
 }
 
 // Variable for updating the score
