@@ -267,6 +267,15 @@ body {
     align-items: center;
     font-size: 45px;
     margin-bottom: 35px;
+    font-weight: 200;
+}
+
+.results-display .final-user-score {
+    display: inline-block;
+    align-items: center;
+    font-size: 90px;
+    margin-bottom: 35px;
+    font-weight: 200;
 }
 
 .results-display .finished-buttons {
