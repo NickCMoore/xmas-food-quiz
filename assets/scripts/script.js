@@ -4,10 +4,11 @@ const rulesDisplay = document.querySelector('.rules-display');
 const quitButton = document.querySelector('.quit-button');
 const main = document.querySelector('.main');
 const continueButton = document.querySelector('.continue-button');
-const questionDisplay = document.querySelector('.question-display')
-const nextButton = document.querySelector('.next-button')
-const questionQuitButton = document.querySelector('.question-quit-button')
-const scoringTally = document.getElementById('player-score')
+const questionDisplay = document.querySelector('.question-display');
+const nextButton = document.querySelector('.next-button');
+const questionQuitButton = document.querySelector('.question-quit-button');
+const scoringTally = document.getElementById('player-score');
+const questionPic = document.getElementById('question-pic');
 
 //Event handlers
 
@@ -47,6 +48,7 @@ let optionList = document.querySelector('.multiple-choice-area');
 function showQuestions(index) {
     console.log('Showing question:', index + 1);
 
+    questionPic.setAttribute('src', "assets/images/" + questions[index].img)
     // Updates the background colour for the option buttons
     document.getElementById('optionA').style.backgroundColor = '';
     document.getElementById('optionB').style.backgroundColor = '';
@@ -123,8 +125,6 @@ function AnswerSelect(selectedOption) {
     stopOptionsOnClick = true;
 }
 
-
-
 // Allows player to move to next question
 nextButton.onclick = () => {
     console.log('Next button clicked');
@@ -156,7 +156,7 @@ let questions = [
         optionC: "Roast Beef",
         optionD: "Lamb",
         correctAnswer: "B",
-        img: ""
+        img: "turkey.jpg", 
     },
 
     {

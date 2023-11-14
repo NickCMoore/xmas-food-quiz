@@ -193,6 +193,11 @@ body {
     font-weight: 200;
 }
 
+.question-display .question-area .food-pic {
+    align-items: center;
+    height: 37vh;
+}
+
 .question-display .player-score h3 {
     align-items: center;
     font-size: 45px;
