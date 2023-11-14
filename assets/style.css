@@ -185,9 +185,19 @@ body {
     cursor: pointer;
 }
 
-.question-display .multiple-choice-area .answer-option:hover {
-    background: #08415C;
-    color: #000;
+.question-display .question-area .question {
+    display: inline-block;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: 35px;
+    font-weight: 200;
+}
+
+.question-display .player-score h3 {
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: 35px;
+    font-weight: 200;
 }
 
 .question-display .question-buttons {
