@@ -9,6 +9,7 @@ const nextButton = document.querySelector('.next-button');
 const questionQuitButton = document.querySelector('.question-quit-button');
 const scoringTally = document.getElementById('player-score');
 const questionPic = document.getElementById('question-pic');
+const finalUserScoreMessage = document.querySelector('.final-user-score-message')
 const resultsDisplay = document.querySelector('.results-display');
 
 //Event handlers
@@ -163,11 +164,10 @@ function endGame() {
     console.log("Moving to results page");
     questionDisplay.classList.remove('active');
     resultsDisplay.classList.add('active');
-    finalScoreText.innerHTML = ` Congratulations! Your total score is: ${score}.`;
+    finalUserScoreMessage.innerHTML = ` Congratulations! Your total score is: ${score}.`;
 
     if (score <= 15) {
-        endImg.setAttribute('src', 'path/to/image.jpg');
-        finalScoreText.innerHTML = `Oh no! You only scored. Better luck next time!`;
+        finalUserScoreMessage.innerHTML = `Oh no! You only scored. Better luck next time!`;
     }
 
     questionCount = 0;
