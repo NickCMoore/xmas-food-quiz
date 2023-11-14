@@ -40,17 +40,7 @@ questionQuitButton.onclick = () => {
     main.classList.remove('active');
 }
 
-// Logs question being displayed to user
-let questionCount = 0;
-
-// Allows player to move to next question
-nextButton.onclick = () => {
-    console.log('Next button clicked');
-    questionCount = (questionCount + 1) % questions.length;
-    showQuestions(questionCount);
-}
-
-// Access multiple choie area in DOM
+// Access multiple choice area in DOM
 let optionList = document.querySelector('.multiple-choice-area');
 
 // Quiz changes based on user interaction
@@ -97,19 +87,22 @@ document.getElementById('optionD').addEventListener('click', function () {
     AnswerSelect('D');
 });
 
-// Variable for updating the score
-let score = 0;
+// Stops further option selection until user clicks 'Next'
+let stopOptionsOnClick = false;
 
 function AnswerSelect(selectedOption) {
     console.log('Selected Option: ' + selectedOption);
 
+    if (stopOptionsOnClick) {
+        const optionStop = document.querySelectorAll('.answer-option')
+        optionStop.forEach(button => {
+            button.disabled = true;
+        });
+        return;
+    }
+
     // Accesses the option element by ID
     const selectedOptionElement = document.getElementById(`option${selectedOption}`);
-    const optionStop = document.querySelectorAll('.answer-option');
-
-    optionStop.forEach(button => {
-        button.disabled = true;
-    });
 
     // Checks if answer is right and provides feedback based on user selection
     if (selectedOption === questions[questionCount].correctAnswer) {
@@ -127,19 +120,30 @@ function AnswerSelect(selectedOption) {
         console.log('Wrong Current score: ' + score);
     }
 
-    setTimeout(() => {
-        optionStop.forEach(button => {
-            button.disabled = false;
-            button.style.backgroundColor = '';
-        });
-    }, 3000);
+    stopOptionsOnClick = true;
 }
+
+
+
+// Allows player to move to next question
+nextButton.onclick = () => {
+    console.log('Next button clicked');
+    stopOptionsOnClick = false;
+    questionCount = (questionCount + 1) % questions.length;
+    showQuestions(questionCount);
+}
+
+// Variable for updating the score
+let score = 0;
 
 // Updates score
 function updateScore() {
     scoringTally.textContent = score;
     console.log('Score updated:', score);
 }
+
+// Logs question being displayed to user
+let questionCount = 0;
 
 // Question bank
 
