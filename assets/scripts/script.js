@@ -120,6 +120,9 @@ function AnswerSelect(selectedOption) {
         updateScore();
         console.log('Correct Current score: ' + score);
     } else {
+        const correctAnswer = document.getElementById(`option${questions[questionCount].correctAnswer}`);
+        correctAnswer.style.backgroundColor = '#4CAF50';
+
         selectedOptionElement.style.backgroundColor = '#FF5252';
         console.log('Wrong Current score: ' + score);
     }
