@@ -185,14 +185,6 @@ body {
     cursor: pointer;
 }
 
-.question-display .question-area .question {
-    display: inline-block;
-    align-items: center;
-    font-size: 45px;
-    margin-bottom: 35px;
-    font-weight: 200;
-}
-
 .question-display .question-area .food-pic {
     align-items: center;
     height: 37vh;
