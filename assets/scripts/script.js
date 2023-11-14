@@ -13,6 +13,7 @@ const finalUserScoreMessage = document.querySelector('.final-user-score-message'
 const finalUserScore = document.querySelector('.final-user-score');
 const resultsDisplay = document.querySelector('.results-display');
 const exitButton = document.querySelector('.exit-button');
+const tryAgainButton = document.querySelector('.try-again-button');
 
 //Event handlers
 
@@ -50,6 +51,18 @@ exitButton.onclick = () => {
     console.log('Exit button clicked');
     resultsDisplay.classList.remove('active');
     main.classList.remove('active');
+}
+
+// Quits from results page to home screen
+tryAgainButton.onclick = () => {
+    console.log('Try again button clicked');
+    resultsDisplay.classList.remove('active');
+    questionDisplay.classList.add('active');
+
+    score = 0;
+    questionCount = 0;
+
+    showQuestions(0);
 }
 
 // Access multiple choice area in DOM
@@ -176,11 +189,9 @@ function endGame() {
     finalUserScoreMessage.innerHTML = ` Congratulations! Your final score is:`;
     finalUserScore.innerHTML = `${score}`;
 
-    if (score <= 15) {
+    if (score <= 10) {
         finalUserScoreMessage.innerHTML = `Oh no! You only scored ${score}. Better luck next time!`;
     }
-
-    questionCount = 0;
 }
 
 // Question bank
