@@ -171,14 +171,14 @@ body {
     display: flex;
     align-items: center;
     font-size: 45px;
-    margin-bottom: 35px;
+    margin: 35px;
 }
 
 .question-display .multiple-choice-area .answer-option {
-    display: flex;
+    display: block;
     align-items: center;
     font-size: 35px;
-    margin: 50px;
+    margin: auto;
     padding: 20px;
     border: 4px;
     border-radius: 10px;
@@ -186,10 +186,9 @@ body {
 }
 
 .question-display .question-area .food-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     height: 27vh;
+    margin: auto;
 }
 
 .question-display .player-score h3 {
