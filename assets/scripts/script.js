@@ -12,6 +12,7 @@ const questionPic = document.getElementById('question-pic');
 const finalUserScoreMessage = document.querySelector('.final-user-score-message');
 const finalUserScore = document.querySelector('.final-user-score');
 const resultsDisplay = document.querySelector('.results-display');
+const exitButton = document.querySelector('.exit-button');
 
 //Event handlers
 
@@ -41,6 +42,13 @@ continueButton.onclick = () => {
 questionQuitButton.onclick = () => {
     console.log('Question Quit button clicked');
     questionDisplay.classList.remove('active')
+    main.classList.remove('active');
+}
+
+// Quits from results page to home screen
+exitButton.onclick = () => {
+    console.log('Exit button clicked');
+    resultsDisplay.classList.remove('active');
     main.classList.remove('active');
 }
 
