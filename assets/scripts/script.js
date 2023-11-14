@@ -9,6 +9,7 @@ const nextButton = document.querySelector('.next-button');
 const questionQuitButton = document.querySelector('.question-quit-button');
 const scoringTally = document.getElementById('player-score');
 const questionPic = document.getElementById('question-pic');
+const resultsDisplay = document.querySelector('.results-display');
 
 //Event handlers
 
@@ -133,12 +134,16 @@ nextButton.onclick = () => {
     if (optionClicked) {
         console.log('Next button clicked');
         stopOptionsOnClick = false;
-        questionCount = (questionCount + 1) % questions.length;
-        showQuestions(questionCount);
 
+        if (questionCount === questions.length - 1) {
+            endGame(); // Call the function to display results
+        } else {
+            questionCount = (questionCount + 1) % questions.length;
+            showQuestions(questionCount);
+        }
         optionClicked = false;
     } else {
-        console.log('Click an answer before moving forwards')
+        console.log('Click an answer before moving forwards');
     }
 }
 
@@ -153,6 +158,20 @@ function updateScore() {
 
 // Logs question being displayed to user
 let questionCount = 0;
+
+function endGame() {
+    console.log("Moving to results page");
+    questionDisplay.classList.remove('active');
+    resultsDisplay.classList.add('active');
+    finalScoreText.innerHTML = ` Congratulations! Your total score is: ${score}.`;
+
+    if (score <= 15) {
+        endImg.setAttribute('src', 'path/to/image.jpg');
+        finalScoreText.innerHTML = `Oh no! You only scored. Better luck next time!`;
+    }
+
+    questionCount = 0;
+}
 
 // Question bank
 
