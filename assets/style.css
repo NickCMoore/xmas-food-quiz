@@ -140,7 +140,7 @@ body {
 .question-display {
     position: absolute;
     top: 15%;
-    left: 30%;
+    left: 35%;
     border-radius: 10px;
     width: 975px;
     background: #CC2936;
@@ -189,7 +189,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 37vh;
+    height: 27vh;
 }
 
 .question-display .player-score h3 {
