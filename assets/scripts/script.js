@@ -105,6 +105,11 @@ function AnswerSelect(selectedOption) {
 
     // Accesses the option element by ID
     const selectedOptionElement = document.getElementById(`option${selectedOption}`);
+    const optionStop = document.querySelectorAll('.answer-option');
+
+    optionStop.forEach(button => {
+        button.disabled = true;
+    });
 
     // Checks if answer is right and provides feedback based on user selection
     if (selectedOption === questions[questionCount].correctAnswer) {
@@ -125,7 +130,6 @@ function updateScore() {
     scoringTally.textContent = score;
     console.log('Score updated:', score);
 }
-
 
 // Question bank
 
