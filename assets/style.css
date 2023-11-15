@@ -69,7 +69,7 @@ body {
     top: 15%;
     left: 30%;
     border-radius: 10px;
-    width: 975px;
+    width: 1000px;
     background: #CC2936;
     padding: 10px 25px;
     opacity: 0;
@@ -100,24 +100,7 @@ body {
     margin: 30px;
 }
 
-.rules-display .rules-buttons .quit-button {
-    height: 55px;
-    width: 190px;
-    text-align: center;
-    background: #08415C;
-    border: 4px;
-    border-radius: 10px;
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.rules-display .rules-buttons .quit-button:hover {
-    background: #6B818C;
-    color: #000;
-}
-
+.rules-display .rules-buttons .quit-button,
 .rules-display .rules-buttons .continue-button {
     height: 55px;
     width: 190px;
@@ -131,6 +114,7 @@ body {
     cursor: pointer;
 }
 
+.rules-display .rules-buttons .quit-button:hover,
 .rules-display .rules-buttons .continue-button:hover {
     background: #6B818C;
     color: #000;
@@ -204,24 +188,7 @@ body {
     margin: 30px;
 }
 
-.question-display .question-buttons .question-quit-button {
-    height: 55px;
-    width: 190px;
-    text-align: center;
-    background: #08415C;
-    border: 4px;
-    border-radius: 10px;
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.question-display .question-buttons .question-quit-button:hover {
-    background: #6B818C;
-    color: #000;
-}
-
+.question-display .question-buttons .question-quit-button,
 .question-display .question-buttons .next-button {
     height: 55px;
     width: 190px;
@@ -235,6 +202,7 @@ body {
     cursor: pointer;
 }
 
+.question-display .question-buttons .question-quit-button:hover,
 .question-display .question-buttons .next-button:hover {
     background: #6B818C;
     color: #000;
@@ -287,24 +255,7 @@ body {
     margin: 30px;
 }
 
-.results-display .finished-buttons .exit-button {
-    height: 55px;
-    width: 190px;
-    text-align: center;
-    background: #08415C;
-    border: 4px;
-    border-radius: 10px;
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.results-display .finished-buttons .exit-button:hover {
-    background: #6B818C;
-    color: #000;
-}
-
+.results-display .finished-buttons .exit-button,
 .results-display .finished-buttons .try-again-button {
     height: 55px;
     width: 190px;
@@ -318,6 +269,7 @@ body {
     cursor: pointer;
 }
 
+.results-display .finished-buttons .exit-button:hover,
 .results-display .finished-buttons .try-again-button:hover {
     background: #6B818C;
     color: #000;
