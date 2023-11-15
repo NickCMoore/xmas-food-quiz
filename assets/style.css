@@ -21,6 +21,7 @@ body {
 
 .main.active {
     filter: blur(13px);
+    pointer-events: none;
 }
 
 .game-area {
