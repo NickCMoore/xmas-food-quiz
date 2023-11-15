@@ -60,7 +60,8 @@ body {
 .results-display .finished-buttons .try-again-button {
     display: inline-block;
     text-align: center;
-    width: 18%;
+    width: 23%;
+    padding: 10px;
     background: #08415C;
     border: 4px;
     border-radius: 10px;

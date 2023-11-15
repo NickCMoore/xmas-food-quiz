@@ -5,6 +5,7 @@ const quitButton = document.querySelector('.quit-button');
 const main = document.querySelector('.main');
 const continueButton = document.querySelector('.continue-button');
 const questionDisplay = document.querySelector('.question-display');
+const optionList = document.querySelector('.multiple-choice-area');
 const nextButton = document.querySelector('.next-button');
 const questionQuitButton = document.querySelector('.question-quit-button');
 const scoringTally = document.getElementById('player-score');
@@ -14,6 +15,18 @@ const finalUserScore = document.querySelector('.final-user-score');
 const resultsDisplay = document.querySelector('.results-display');
 const exitButton = document.querySelector('.exit-button');
 const tryAgainButton = document.querySelector('.try-again-button');
+
+// Variable for updating the score
+let score = 0;
+
+// Logs question being displayed to the user
+let questionCount = 0;
+
+// Stops further option selection until user clicks 'Next'
+let stopOptionsOnClick = false;
+
+// Checks whether an option has been clicked
+let optionClicked = false;
 
 //Event handlers
 
@@ -65,8 +78,41 @@ tryAgainButton.onclick = () => {
     showQuestions(0);
 }
 
-// Access multiple choice area in DOM
-let optionList = document.querySelector('.multiple-choice-area');
+// Event handlers based on option selected by player
+
+document.getElementById('optionA').addEventListener('click', function () {
+    AnswerSelect('A');
+});
+
+document.getElementById('optionB').addEventListener('click', function () {
+    AnswerSelect('B');
+});
+
+document.getElementById('optionC').addEventListener('click', function () {
+    AnswerSelect('C');
+});
+
+document.getElementById('optionD').addEventListener('click', function () {
+    AnswerSelect('D');
+});
+
+// Allows player to move to next question
+nextButton.onclick = () => {
+    if (optionClicked) {
+        console.log('Next button clicked');
+        stopOptionsOnClick = false;
+
+        if (questionCount === questions.length - 1) {
+            endGame(); // Call the function to display results
+        } else {
+            questionCount = (questionCount + 1) % questions.length;
+            showQuestions(questionCount);
+        }
+        optionClicked = false;
+    } else {
+        console.log('Click an answer before moving forwards');
+    }
+}
 
 // Quiz changes based on user interaction
 function showQuestions(index) {
@@ -95,29 +141,13 @@ function showQuestions(index) {
     console.log('Finished showing question.');
 }
 
-// Event handlers based on option selected by player
+// Scoring section
 
-document.getElementById('optionA').addEventListener('click', function () {
-    AnswerSelect('A');
-});
-
-document.getElementById('optionB').addEventListener('click', function () {
-    AnswerSelect('B');
-});
-
-document.getElementById('optionC').addEventListener('click', function () {
-    AnswerSelect('C');
-});
-
-document.getElementById('optionD').addEventListener('click', function () {
-    AnswerSelect('D');
-});
-
-// Stops further option selection until user clicks 'Next'
-let stopOptionsOnClick = false;
-
-// Checks whether an option has been clicked
-let optionClicked = false;
+// Updates score
+function updateScore() {
+    scoringTally.textContent = score;
+    console.log('Score updated:', score);
+}
 
 function AnswerSelect(selectedOption) {
     console.log('Selected Option: ' + selectedOption);
@@ -152,36 +182,6 @@ function AnswerSelect(selectedOption) {
     stopOptionsOnClick = true;
 }
 
-// Allows player to move to next question
-nextButton.onclick = () => {
-    if (optionClicked) {
-        console.log('Next button clicked');
-        stopOptionsOnClick = false;
-
-        if (questionCount === questions.length - 1) {
-            endGame(); // Call the function to display results
-        } else {
-            questionCount = (questionCount + 1) % questions.length;
-            showQuestions(questionCount);
-        }
-        optionClicked = false;
-    } else {
-        console.log('Click an answer before moving forwards');
-    }
-}
-
-// Variable for updating the score
-let score = 0;
-
-// Updates score
-function updateScore() {
-    scoringTally.textContent = score;
-    console.log('Score updated:', score);
-}
-
-// Logs question being displayed to user
-let questionCount = 0;
-
 function endGame() {
     console.log("Moving to results page");
     questionDisplay.classList.remove('active');
@@ -189,7 +189,7 @@ function endGame() {
     finalUserScoreMessage.innerHTML = ` Congratulations! Your final score is:`;
     finalUserScore.innerHTML = `${score}`;
 
-    if (score <= 10) {
+    if (score <= 100) {
         finalUserScoreMessage.innerHTML = `Oh no! You only scored ${score}. Better luck next time!`;
     }
 }
