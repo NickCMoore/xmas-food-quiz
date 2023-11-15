@@ -64,6 +64,13 @@ exitButton.onclick = () => {
     console.log('Exit button clicked');
     resultsDisplay.classList.remove('active');
     main.classList.remove('active');
+
+    score = 0;
+    questionCount = 0;
+
+    updateScore();
+
+    showQuestions(0);
 }
 
 // Quits from results page to home screen
@@ -74,6 +81,8 @@ tryAgainButton.onclick = () => {
 
     score = 0;
     questionCount = 0;
+
+    updateScore();
 
     showQuestions(0);
 }
