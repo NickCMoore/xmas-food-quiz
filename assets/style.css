@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Grandstander:italic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Grandstander:ital@1&display=swap');
 
 * {
     margin: 0;
@@ -58,16 +58,17 @@ body {
 .question-display .question-buttons .next-button,
 .results-display .finished-buttons .exit-button,
 .results-display .finished-buttons .try-again-button {
-    height: 75px;
-    width: 200px;
-    background: #CC2936;
+    display: inline-block;
+    text-align: center;
+    width: 18%;
+    background: #08415C;
     border: 4px;
     border-radius: 10px;
     font-size: 40px;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
-
 
 /* Button styling for hover */
 .game-content .start-button:hover,
