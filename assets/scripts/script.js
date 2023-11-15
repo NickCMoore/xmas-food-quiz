@@ -90,19 +90,19 @@ tryAgainButton.onclick = () => {
 // Event handlers based on option selected by player
 
 document.getElementById('optionA').addEventListener('click', function () {
-    AnswerSelect('A');
+    answerSelect('A');
 });
 
 document.getElementById('optionB').addEventListener('click', function () {
-    AnswerSelect('B');
+    answerSelect('B');
 });
 
 document.getElementById('optionC').addEventListener('click', function () {
-    AnswerSelect('C');
+    answerSelect('C');
 });
 
 document.getElementById('optionD').addEventListener('click', function () {
-    AnswerSelect('D');
+    answerSelect('D');
 });
 
 // Allows player to move to next question
@@ -158,7 +158,7 @@ function updateScore() {
     console.log('Score updated:', score);
 }
 
-function AnswerSelect(selectedOption) {
+function answerSelect(selectedOption) {
     console.log('Selected Option: ' + selectedOption);
 
     if (stopOptionsOnClick) {
