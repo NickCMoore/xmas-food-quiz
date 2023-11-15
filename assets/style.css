@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Grandstander:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Grandstander:italic&display=swap');
 
 * {
     margin: 0;
@@ -49,7 +49,15 @@ body {
     margin-bottom: 45px;
 }
 
-.game-content .start-button {
+/* Button styling */
+
+.game-content .start-button,
+.rules-display .rules-buttons .quit-button,
+.rules-display .rules-buttons .continue-button,
+.question-display .question-buttons .question-quit-button,
+.question-display .question-buttons .next-button,
+.results-display .finished-buttons .exit-button,
+.results-display .finished-buttons .try-again-button {
     height: 75px;
     width: 200px;
     background: #CC2936;
@@ -60,11 +68,24 @@ body {
     cursor: pointer;
 }
 
-.game-content .start-button:hover {
+
+/* Button styling for hover */
+.game-content .start-button:hover,
+.rules-display .rules-buttons .quit-button:hover,
+.rules-display .rules-buttons .continue-button:hover,
+.question-display .question-buttons .question-quit-button:hover,
+.question-display .question-buttons .next-button:hover,
+.results-display .finished-buttons .exit-button:hover,
+.results-display .finished-buttons .try-again-button:hover {
     background: #6B818C;
+    color: #000;
 }
 
-.rules-display {
+/* Display styling */
+
+.rules-display,
+.question-display,
+.results-display {
     position: absolute;
     top: 15%;
     left: 30%;
@@ -76,12 +97,19 @@ body {
     pointer-events: none;
 }
 
-.rules-display h2 {
+/* Display heading styling */
+
+.rules-display h2,
+.question-display h3,
+.results-display h3 {
     font-size: 70px;
     text-align: center;
 }
 
-.rules-display.active {
+/* Display heading styling (active) */
+.rules-display.active,
+.question-display.active,
+.results-display.active {
     opacity: 1;
     pointer-events: auto;
 }
@@ -93,61 +121,12 @@ body {
     margin-bottom: 35px;
 }
 
-.rules-display .rules-buttons {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    margin: 30px;
-}
-
-.rules-display .rules-buttons .quit-button,
-.rules-display .rules-buttons .continue-button {
-    height: 55px;
-    width: 190px;
-    text-align: center;
-    background: #08415C;
-    border: 4px;
-    border-radius: 10px;
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.rules-display .rules-buttons .quit-button:hover,
-.rules-display .rules-buttons .continue-button:hover {
-    background: #6B818C;
-    color: #000;
-}
-
-.question-display {
-    position: absolute;
-    top: 15%;
-    left: 35%;
-    border-radius: 10px;
-    width: 975px;
-    background: #CC2936;
-    padding: 10px 25px;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.question-display h3 {
-    font-size: 70px;
-    text-align: center;
-}
-
 .question-display .question-area .question {
     display: inline-block;
     align-items: center;
     font-size: 45px;
     margin-bottom: 35px;
     font-weight: 200;
-}
-
-.question-display.active {
-    opacity: 1;
-    pointer-events: auto;
 }
 
 .question-display .multiple-choice-area {
@@ -181,55 +160,6 @@ body {
     font-weight: 200;
 }
 
-.question-display .question-buttons {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    margin: 30px;
-}
-
-.question-display .question-buttons .question-quit-button,
-.question-display .question-buttons .next-button {
-    height: 55px;
-    width: 190px;
-    text-align: center;
-    background: #08415C;
-    border: 4px;
-    border-radius: 10px;
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.question-display .question-buttons .question-quit-button:hover,
-.question-display .question-buttons .next-button:hover {
-    background: #6B818C;
-    color: #000;
-}
-
-.results-display {
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    border-radius: 10px;
-    width: 975px;
-    background: #CC2936;
-    padding: 10px 25px;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.results-display h3 {
-    font-size: 70px;
-    text-align: center;
-}
-
-.results-display.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 .results-display .final-user-score-message {
     display: flex;
     align-items: center;
@@ -246,31 +176,4 @@ body {
     font-size: 90px;
     margin: 30px;
     font-weight: 200;
-}
-
-.results-display .finished-buttons {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    margin: 30px;
-}
-
-.results-display .finished-buttons .exit-button,
-.results-display .finished-buttons .try-again-button {
-    height: 55px;
-    width: 190px;
-    text-align: center;
-    background: #08415C;
-    border: 4px;
-    border-radius: 10px;
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.results-display .finished-buttons .exit-button:hover,
-.results-display .finished-buttons .try-again-button:hover {
-    background: #6B818C;
-    color: #000;
 }
