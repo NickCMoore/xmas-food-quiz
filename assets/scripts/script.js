@@ -416,7 +416,7 @@ let questions = [
         correctAnswer: "D",
         img: "japanese.jpg"
     },
-]
+];
 
 
 
