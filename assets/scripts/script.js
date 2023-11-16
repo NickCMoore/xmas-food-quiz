@@ -1,50 +1,27 @@
-// DOM element selection
-const startButton = document.querySelector('.start-button');
-const rulesDisplay = document.querySelector('.rules-display');
-const quitButton = document.querySelector('.quit-button');
-const main = document.querySelector('.main');
-const continueButton = document.querySelector('.continue-button');
-const questionDisplay = document.querySelector('.question-display');
-const optionList = document.querySelector('.multiple-choice-area');
-const nextButton = document.querySelector('.next-button');
-const questionQuitButton = document.querySelector('.question-quit-button');
-const scoringTally = document.getElementById('player-score');
-const questionPic = document.getElementById('question-pic');
-const finalUserScoreMessage = document.querySelector('.final-user-score-message');
-const finalUserScore = document.querySelector('.final-user-score');
-const resultsDisplay = document.querySelector('.results-display');
-const exitButton = document.querySelector('.exit-button');
-const tryAgainButton = document.querySelector('.try-again-button');
-
-// Variable for updating the score
-let score = 0;
-
-// Logs question being displayed to the user
-let questionCount = 0;
-
-// Stops further option selection until user clicks 'Next'
-let stopOptionsOnClick = false;
-
-// Checks whether an option has been clicked
-let optionClicked = false;
-
-//Event handlers
-
-// Shows game rules
+/**
+ * Event handler for the "Start" button click.
+ * Displays game rules.
+ */
 startButton.onclick = () => {
     console.log('Start button clicked');
     rulesDisplay.classList.add('active');
     main.classList.add('active');
 }
 
-// Quits to home screen
+/**
+ * Event handler for the "Quit" button in the rules screen.
+ * Option available to quit to the home screen.
+ */
 quitButton.onclick = () => {
     console.log('Quit button clicked');
     rulesDisplay.classList.remove('active');
     main.classList.remove('active');
 }
 
-// Starts quiz
+/**
+ * Event handler for the "Continue" button in the rules screen.
+ * Starts the quiz and displays the first question.
+ */
 continueButton.onclick = () => {
     console.log('Continue button clicked');
     questionDisplay.classList.add('active');
@@ -52,14 +29,19 @@ continueButton.onclick = () => {
     showQuestions(0);
 }
 
-// Quits to home screen
+/**
+ * Event handler for leaving quiz and returning to the home screen.
+ */
 questionQuitButton.onclick = () => {
     console.log('Question Quit button clicked');
     questionDisplay.classList.remove('active')
     main.classList.remove('active');
 }
 
-// Quits from results page to home screen
+/**
+ * Event handler for the "Exit" button in the results screen.
+ * Quits from the results page to the home screen, resets score and shows the first question again.
+ */
 exitButton.onclick = () => {
     console.log('Exit button clicked');
     resultsDisplay.classList.remove('active');
@@ -73,7 +55,10 @@ exitButton.onclick = () => {
     showQuestions(0);
 }
 
-// Quits from results page to home screen
+/**
+ * Event handler for the "Try Again" button in the results screen.
+ * Quits from the results page to the question screen, resets score and shows the first question again.
+ */
 tryAgainButton.onclick = () => {
     console.log('Try again button clicked');
     resultsDisplay.classList.remove('active');
@@ -87,25 +72,10 @@ tryAgainButton.onclick = () => {
     showQuestions(0);
 }
 
-// Event handlers based on option selected by player
-
-document.getElementById('optionA').addEventListener('click', function () {
-    answerSelect('A');
-});
-
-document.getElementById('optionB').addEventListener('click', function () {
-    answerSelect('B');
-});
-
-document.getElementById('optionC').addEventListener('click', function () {
-    answerSelect('C');
-});
-
-document.getElementById('optionD').addEventListener('click', function () {
-    answerSelect('D');
-});
-
-// Allows player to move to next question
+/**
+ * Event handler for the "Next" button.
+ * Allows the player to move to the next question.
+ */
 nextButton.onclick = () => {
     if (optionClicked) {
         console.log('Next button clicked');
@@ -123,7 +93,9 @@ nextButton.onclick = () => {
     }
 }
 
-// Quiz changes based on user interaction
+/**
+ * Displays the current question.
+ */
 function showQuestions(index) {
     console.log('Showing question:', index + 1);
 
@@ -150,14 +122,17 @@ function showQuestions(index) {
     console.log('Finished showing question.');
 }
 
-// Scoring section
-
-// Updates score
+/**
+ * Updates the displayed score on the page.
+ */
 function updateScore() {
     scoringTally.textContent = score;
     console.log('Score updated:', score);
 }
 
+/**
+ * Deals with the selection of an answer.
+ */
 function answerSelect(selectedOption) {
     console.log('Selected Option: ' + selectedOption);
 
@@ -177,20 +152,23 @@ function answerSelect(selectedOption) {
         selectedOptionElement.style.backgroundColor = '#4CAF50';
         score += 10;
 
-        // Path for correct and incorrect user answers
         updateScore();
-        console.log('Correct Current score: ' + score);
+        console.log('Correct. Current score: ' + score);
     } else {
         const correctAnswer = document.getElementById(`option${questions[questionCount].correctAnswer}`);
         correctAnswer.style.backgroundColor = '#4CAF50';
 
         selectedOptionElement.style.backgroundColor = '#FF5252';
-        console.log('Wrong Current score: ' + score);
+        console.log('Wrong. Current score: ' + score);
     }
     optionClicked = true;
     stopOptionsOnClick = true;
 }
 
+/**
+ * Deals with the end of the game.
+ * Moves to the results page, displays the final score and provides an appropriate message based on the score.
+ */
 function endGame() {
     console.log("Moving to results page");
     questionDisplay.classList.remove('active');
@@ -202,4 +180,3 @@ function endGame() {
         finalUserScoreMessage.innerHTML = `Oh no! You only scored ${score}. Better luck next time!`;
     }
 }
-

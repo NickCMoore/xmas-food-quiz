@@ -1,4 +1,9 @@
-// Question bank
+/**
+ * Question bank for the Christmas quiz.
+ * Each question includes a number, a question prompt,
+ * answer options (A, B, C, D), a correct answer
+ * and a filename of the linked image.
+ */
 
 let questions = [
     {
