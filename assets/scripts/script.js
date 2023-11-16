@@ -212,8 +212,10 @@ function endGame() {
 
     if (score <= 100) {
         finalUserScoreMessage.innerHTML = `Oh no! You only scored ${score}. Better luck next time!`;
+        document.getElementById('results-page-image').src = 'assets/images/sad_dinner.webp';
     } else {
         finalUserScoreMessage.innerHTML = ` Congratulations! Your final score is:`;
+        document.getElementById('results-page-image').src = 'assets/images/happy_dinner.webp';
     }
     finalUserScore.innerHTML = `${score}`;
 }
