@@ -99,9 +99,6 @@ nextButton.onclick = () => {
         console.log('Next button clicked');
         stopOptionsOnClick = false;
 
-        clearInterval(myInterval);
-        counter = 0;
-
         if (questionCount === questions.length - 1) {
             endGame(); // Call the function to display results
         } else {
@@ -123,7 +120,7 @@ let questionCount = 0;
 let score = 0;
 let counter = 0;
 let myInterval;
-let timeRemaining = 60;
+let timeRemaining = 20;
 
 /**
  * Starting the timer
@@ -135,11 +132,15 @@ function startTimer() {
 /**
  * Timer function
  */
+
 function timer() {
     console.log('Time is counting down');
     counter++;
-    document.getElementById('timer').textContent = Math.max(timeRemaining - counter, 0);
-    if (counter === timeRemaining) {
+
+
+    if (counter <= timeRemaining) {
+        document.getElementById('timer').textContent = (timeRemaining - counter);
+    } else {
         timeout();
         clearInterval(myInterval);
     }
@@ -163,6 +164,9 @@ function timeout() {
         score = 0;
         updateScore();
     }
+
+    optionClicked = true;
+    stopOptionsOnClick = false;
 }
 
 /**
@@ -184,6 +188,12 @@ function showQuestions(index) {
 
     questionPic.setAttribute('src', "assets/images/" + questions[index].img)
     startTimer()
+
+    const optionButtons = document.querySelectorAll('.answer-option');
+    optionButtons.forEach(button => {
+        button.style.backgroundColor = '';
+        button.disabled = false;
+    });
 
     //Resets background colours for the option buttons
     document.getElementById('optionA').style.backgroundColor = '';

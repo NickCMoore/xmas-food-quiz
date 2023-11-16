@@ -163,7 +163,9 @@ body {
 
 #timer {
     font-weight: bold;
-    color: #fff
+    color: #fff;
+    font-size: 90px;
+    font-weight: 200;
 }
 
 .question-display .question-area .question {
