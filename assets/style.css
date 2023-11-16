@@ -117,10 +117,12 @@ body {
 .question-display,
 .results-display {
     position: absolute;
-    top: 15%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
-    width: 1000px;
+    max-width: 1000px;
+    width: 90%;
     background: #CC2936;
     padding: 10px 25px;
     opacity: 0;
@@ -196,6 +198,7 @@ body {
     display: block;
     height: 27vh;
     margin: auto;
+    border-radius: 10px;
 }
 
 .question-display .player-score h3 {
