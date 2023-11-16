@@ -151,21 +151,18 @@ body {
     margin-bottom: 35px;
 }
 
-#timer-container {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#timer-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
 }
 
 #timer {
+    display: flex;
+    align-items: center;
     font-weight: bold;
-    color: #fff;
-    font-size: 90px;
     font-weight: 200;
+    font-size: 70px;
 }
 
 .question-display .question-area .question {
