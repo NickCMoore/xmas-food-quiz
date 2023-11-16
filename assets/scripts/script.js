@@ -1,4 +1,25 @@
 /**
+ * DOM elements for the quiz
+ */
+const startButton = document.querySelector('.start-button');
+const rulesDisplay = document.querySelector('.rules-display');
+const quitButton = document.querySelector('.quit-button');
+const main = document.querySelector('.main');
+const continueButton = document.querySelector('.continue-button');
+const questionDisplay = document.querySelector('.question-display');
+const nextButton = document.querySelector('.next-button');
+const questionQuitButton = document.querySelector('.question-quit-button');
+const scoringTally = document.getElementById('player-score');
+const questionPic = document.getElementById('question-pic');
+const finalUserScoreMessage = document.querySelector('.final-user-score-message');
+const finalUserScore = document.querySelector('.final-user-score');
+const resultsDisplay = document.querySelector('.results-display');
+const exitButton = document.querySelector('.exit-button');
+const tryAgainButton = document.querySelector('.try-again-button');
+const optionList = document.querySelector('.multiple-choice-area');
+
+
+/**
  * Event handler for the "Start" button click.
  * Displays game rules.
  */
