@@ -118,6 +118,49 @@ let stopOptionsOnClick = false;
 let optionClicked = false;
 let questionCount = 0;
 let score = 0;
+let counter = 0;
+let myInterval;
+let timeRemaining = 60;
+
+/**
+ * Starting the timer
+ */
+function startTimer() {
+    myInterval = setInterval(timer, 1000);
+}
+
+/**
+ * Timer function
+ */
+function timer() {
+    console.log('Time is counting down');
+    counter++;
+    document.getElementById('timer').textContent = (timeRemaining - counter);
+    if (counter === timeRemaining) {
+        timeout();
+        clearInterval(myInterval);
+    }
+}
+
+/**
+ * Function for if user runs out of time
+ */
+function timeout() {
+    console.log('You have no time left!');
+
+    document.querySelector('.question').textContent = ('You are out of time!');
+
+    const optionButtons = document.querySelectorAll('.answer-option');
+    optionButtons.forEach(button => {
+        button.disabled = true;
+    });
+
+    if (!optionClicked) {
+        console.log('No answer selected. Updating score to 0.');
+        score = 0;
+        updateScore();
+    }
+}
 
 /**
  * Event listeners for option buttons (A, B, C, D).
@@ -133,7 +176,11 @@ document.getElementById('optionD').addEventListener('click', function () { answe
 function showQuestions(index) {
     console.log('Showing question:', index + 1);
 
+    clearInterval(myInterval);
+    counter = 0;
+
     questionPic.setAttribute('src', "assets/images/" + questions[index].img)
+    startTimer()
 
     //Resets background colours for the option buttons
     document.getElementById('optionA').style.backgroundColor = '';
@@ -155,6 +202,7 @@ function showQuestions(index) {
     document.querySelector('#optionD').textContent = `${questions[index].optionD}`;
 
     stopOptionsOnClick = false
+    startTimer();
 
     console.log('Finished showing question.');
 }

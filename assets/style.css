@@ -151,6 +151,21 @@ body {
     margin-bottom: 35px;
 }
 
+#timer-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#timer {
+    font-weight: bold;
+    color: #fff
+}
+
 .question-display .question-area .question {
     display: inline-block;
     align-items: center;
