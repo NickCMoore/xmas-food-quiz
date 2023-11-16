@@ -135,7 +135,7 @@ function startTimer() {
 function timer() {
     console.log('Time is counting down');
     counter++;
-    document.getElementById('timer').textContent = (timeRemaining - counter);
+    document.getElementById('timer').textContent = Math.max(timeRemaining - counter, 0);
     if (counter === timeRemaining) {
         timeout();
         clearInterval(myInterval);
