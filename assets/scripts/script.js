@@ -190,6 +190,7 @@ function showQuestions(index) {
     startTimer()
 
     const optionButtons = document.querySelectorAll('.answer-option');
+
     optionButtons.forEach(button => {
         button.style.backgroundColor = '';
         button.disabled = false;
@@ -215,7 +216,6 @@ function showQuestions(index) {
     document.querySelector('#optionD').textContent = `${questions[index].optionD}`;
 
     stopOptionsOnClick = false
-    startTimer();
 
     console.log('Finished showing question.');
 }
