@@ -99,6 +99,9 @@ nextButton.onclick = () => {
         console.log('Next button clicked');
         stopOptionsOnClick = false;
 
+        clearInterval(myInterval);
+        counter = 0;
+
         if (questionCount === questions.length - 1) {
             endGame(); // Call the function to display results
         } else {
