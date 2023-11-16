@@ -1,5 +1,7 @@
+/* Importing a Google Font for the page */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
+/* Global style */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body {
     color: #fff;
 }
 
+/* Main section styling */
 .main {
     min-height: 100vh;
     background-image: url(../assets/images/Christmas_meal_main.webp);
@@ -24,6 +27,7 @@ body {
     pointer-events: none;
 }
 
+/* Game area and content styles */
 .game-area {
     height: 100vh;
     width: 100%;
@@ -39,6 +43,7 @@ body {
     flex-direction: column;
 }
 
+/* Styles for heading and paragraph within game content */
 .game-content h1 {
     font-size: 130px;
     font-weight: 500;
@@ -50,8 +55,7 @@ body {
     margin-bottom: 45px;
 }
 
-/* Button styling */
-
+/* Button styles */
 .game-content .start-button {
     display: inline-block;
     width: 23%;
@@ -65,6 +69,7 @@ body {
     text-decoration: none;
 }
 
+/* Styles for display buttons */
 .rules-display .rules-buttons,
 .question-display .question-buttons,
 .results-display .finished-buttons {
@@ -73,6 +78,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Styles for specific display buttons */
 .rules-display .rules-buttons .quit-button,
 .question-display .question-buttons .question-quit-button,
 .results-display .finished-buttons .exit-button,
@@ -95,7 +101,7 @@ body {
 }
 
 
-/* Button styling for hover */
+/* Hover effects for buttons */
 .game-content .start-button:hover,
 .rules-display .rules-buttons .quit-button:hover,
 .rules-display .rules-buttons .continue-button:hover,
@@ -107,8 +113,7 @@ body {
     color: #000;
 }
 
-/* Display styling */
-
+/* Display styles */
 .rules-display,
 .question-display,
 .results-display {
@@ -124,7 +129,6 @@ body {
 }
 
 /* Display heading styling */
-
 .rules-display h2,
 .question-display h3,
 .results-display h3 {
@@ -140,6 +144,7 @@ body {
     pointer-events: auto;
 }
 
+/* Styles for specific display elements */
 .rules-display .rules {
     display: inline-block;
     align-items: center;
