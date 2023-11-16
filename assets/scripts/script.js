@@ -84,12 +84,9 @@ tryAgainButton.onclick = () => {
     console.log('Try again button clicked');
     resultsDisplay.classList.remove('active');
     questionDisplay.classList.add('active');
-
     score = 0;
     questionCount = 0;
-
     updateScore();
-
     showQuestions(0);
 }
 
@@ -115,13 +112,30 @@ nextButton.onclick = () => {
 }
 
 /**
+ * Variables to track the quiz and user's progress.
+ */
+let stopOptionsOnClick = false;
+let optionClicked = false;
+let questionCount = 0;
+let score = 0;
+
+/**
+ * Event listeners for option buttons (A, B, C, D).
+ */
+document.getElementById('optionA').addEventListener('click', function () { answerSelect('A'); });
+document.getElementById('optionB').addEventListener('click', function () { answerSelect('B'); });
+document.getElementById('optionC').addEventListener('click', function () { answerSelect('C'); });
+document.getElementById('optionD').addEventListener('click', function () { answerSelect('D'); });
+
+/**
  * Displays the current question.
  */
 function showQuestions(index) {
     console.log('Showing question:', index + 1);
 
     questionPic.setAttribute('src', "assets/images/" + questions[index].img)
-    // Updates the background colour for the option buttons
+
+    //Resets background colours for the option buttons
     document.getElementById('optionA').style.backgroundColor = '';
     document.getElementById('optionB').style.backgroundColor = '';
     document.getElementById('optionC').style.backgroundColor = '';
@@ -139,6 +153,8 @@ function showQuestions(index) {
     document.querySelector('#optionB').textContent = `${questions[index].optionB}`;
     document.querySelector('#optionC').textContent = `${questions[index].optionC}`;
     document.querySelector('#optionD').textContent = `${questions[index].optionD}`;
+
+    stopOptionsOnClick = false
 
     console.log('Finished showing question.');
 }
@@ -178,12 +194,11 @@ function answerSelect(selectedOption) {
     } else {
         const correctAnswer = document.getElementById(`option${questions[questionCount].correctAnswer}`);
         correctAnswer.style.backgroundColor = '#4CAF50';
-
         selectedOptionElement.style.backgroundColor = '#FF5252';
         console.log('Wrong. Current score: ' + score);
     }
     optionClicked = true;
-    stopOptionsOnClick = true;
+    stopOptionsOnClick = false;
 }
 
 /**
@@ -194,10 +209,11 @@ function endGame() {
     console.log("Moving to results page");
     questionDisplay.classList.remove('active');
     resultsDisplay.classList.add('active');
-    finalUserScoreMessage.innerHTML = ` Congratulations! Your final score is:`;
-    finalUserScore.innerHTML = `${score}`;
 
     if (score <= 100) {
         finalUserScoreMessage.innerHTML = `Oh no! You only scored ${score}. Better luck next time!`;
+    } else {
+        finalUserScoreMessage.innerHTML = ` Congratulations! Your final score is:`;
     }
+    finalUserScore.innerHTML = `${score}`;
 }
