@@ -171,19 +171,21 @@ body {
     display: inline-block;
     align-items: center;
     font-size: 45px;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
     font-weight: 200;
 }
 
 .question-display .multiple-choice-area {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     font-size: 45px;
     margin: 35px;
 }
 
 .question-display .multiple-choice-area .answer-option {
-    display: block;
+    display: flex;
     align-items: center;
     font-size: 35px;
     margin: auto;
@@ -203,8 +205,8 @@ body {
 
 .question-display .player-score h3 {
     align-items: center;
-    font-size: 45px;
-    margin-bottom: 35px;
+    font-size: 50px;
+    margin: 10px;
     font-weight: 200;
 }
 
@@ -224,4 +226,124 @@ body {
     font-size: 90px;
     margin: 30px;
     font-weight: 200;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .game-content h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .game-content p {
+        font-size: 30px;
+        margin-bottom: 20px;
+        width: 85%;
+    }
+
+    .game-content .start-button {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .rules-display,
+    .question-display,
+    .results-display {
+        height: 94%;
+        width: 85%;
+    }
+
+    .rules-display h2,
+    .question-display h3,
+    .results-display h3 {
+        font-size: 25px;
+    }
+
+    .rules-display .rules {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    #timer-section {
+        margin: 5px;
+    }
+
+    #timer {
+        font-size: 30px;
+    }
+
+    .rules-display .rules-buttons .quit-button,
+    .question-display .question-buttons .question-quit-button,
+    .results-display .finished-buttons .exit-button,
+    .rules-display .rules-buttons .continue-button,
+    .question-display .question-buttons .next-button,
+    .results-display .finished-buttons .try-again-button {
+        width: 38%;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .question-display .question-area .food-pic,
+    .results-display .results-page-image {
+        height: 25vh;
+    }
+
+    .question-display .question-area .question {
+        font-size: 20px;
+    }
+
+    .question-display .multiple-choice-area {
+        font-size: 20px;
+        width: fit-content;
+        margin: 5px
+    }
+
+    .question-display.active .question-area,
+    .results-display.active .question-area {
+        padding: 2px;
+    }
+
+    .question-display .multiple-choice-area .answer-option {
+        display: block;
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px;
+        width: 40%;
+    }
+
+    .question-display .question-area .food-pic,
+    .results-display .results-page-image {
+        height: 27vh;
+    }
+
+    .question-display .player-score h3 {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 20px;
+    }
+
+    .results-display h3 {
+        font-size: 45px;
+        margin-top: 30px;
+        font-weight: 200;
+    }
+
+    .results-display .final-user-score-message {
+        font-size: 20px;
+    }
+
+    .results-display .final-user-score {
+        font-size: 40px;
+    }
+
+    .question-display .question-buttons {
+        margin: 5px;
+    }
+
+    .results-display .finished-buttons {
+        margin: 10px;
+    }
 }
