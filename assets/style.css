@@ -124,7 +124,7 @@ body {
     max-width: 1000px;
     width: 90%;
     background: #CC2936;
-    padding: 10px 25px;
+    padding: 5px 15px;
     opacity: 0;
     pointer-events: none;
 }
@@ -156,7 +156,7 @@ body {
 #timer-section {
     display: flex;
     justify-content: center;
-    margin: 40px;
+    margin: 10px;
 }
 
 #timer {
@@ -164,7 +164,7 @@ body {
     align-items: center;
     font-weight: bold;
     font-weight: 200;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .question-display .question-area .question {
@@ -275,15 +275,14 @@ body {
         font-size: 30px;
     }
 
-    .rules-display .rules-buttons .quit-button,
-    .question-display .question-buttons .question-quit-button,
-    .results-display .finished-buttons .exit-button,
-    .rules-display .rules-buttons .continue-button,
-    .question-display .question-buttons .next-button,
-    .results-display .finished-buttons .try-again-button {
+    .rules-display .rules-buttons,
+    .question-display .question-buttons,
+    .results-display .finished-buttons {
         width: 38%;
         font-size: 20px;
         margin-top: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .question-display .question-area .food-pic,
@@ -339,11 +338,8 @@ body {
         font-size: 40px;
     }
 
-    .question-display .question-buttons {
-        margin: 5px;
-    }
-
+    .question-display .question-buttons,
     .results-display .finished-buttons {
-        margin: 10px;
+        margin: 5px;
     }
 }
