@@ -228,6 +228,103 @@ body {
     font-weight: 200;
 }
 
+@media (min-width: 481px) and (max-width: 991px) {
+    .game-content h1 {
+        font-size: 75px;
+        margin-bottom: 30px;
+    }
+
+    .game-content p {
+        font-size: 40px;
+        margin-bottom: 20px;
+        width: 75%;
+    }
+
+    .game-content .start-button {
+        font-size: 35px;
+    }
+
+    .rules-display,
+    .question-display,
+    .results-display {
+        width: 85%;
+    }
+
+    .rules-display h2,
+    .question-display h3,
+    .results-display h3 {
+        font-size: 45px;
+    }
+
+    .rules-display .rules {
+        font-size: 40px;
+        margin-bottom: 32px;
+    }
+
+    .rules-display .rules-buttons .quit-button,
+    .rules-display .rules-buttons .continue-button,
+    .question-display .question-buttons .question-quit-button,
+    .question-display .question-buttons .next-button,
+    .results-display .finished-buttons .exit-button,
+    .results-display .finished-buttons .try-again-button {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        width: 38%;
+    }
+
+    .question-display .question-area .food-pic,
+    .results-display .results-page-image {
+        height: 33vh;
+    }
+
+    .question-display .question-area .question {
+        font-size: 40px;
+    }
+
+    .question-display .multiple-choice-area {
+        font-size: 20px;
+        width: fit-content;
+        margin: 15px
+    }
+
+    .question-display .multiple-choice-area .answer-option {
+        display: block;
+        font-size: 30px;
+        margin: 10px;
+        width: 40%;
+    }
+
+    .question-display .player-score h3 {
+        font-size: 35px;
+        font-weight: 200;
+        margin-top: 20px;
+    }
+
+    #timer {
+        font-size: 40px;
+    }
+
+    .results-display h3 {
+        font-size: 45px;
+        margin-top: 30px;
+        font-weight: 200;
+    }
+
+    .results-display .final-user-score-message {
+        font-size: 35px;
+    }
+
+    .results-display .final-user-score {
+        font-size: 60px;
+    }
+
+    .question-display .question-buttons,
+    .results-display .finished-buttons {
+        margin: 5px;
+    }
+}
+
 @media (max-width: 480px) {
     body {
         font-size: 14px;
@@ -235,7 +332,8 @@ body {
 
     .game-content h1 {
         font-size: 50px;
-        margin-bottom: 30px;
+        margin-top: 140px;
+        margin-bottom: 20px;
     }
 
     .game-content p {
@@ -252,18 +350,18 @@ body {
     .rules-display,
     .question-display,
     .results-display {
-        height: 94%;
-        width: 85%;
+        height: 98%;
+        width: 93%;
     }
 
     .rules-display h2,
     .question-display h3,
     .results-display h3 {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .rules-display .rules {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 32px;
     }
 
@@ -275,23 +373,21 @@ body {
         font-size: 30px;
     }
 
-    .rules-display .rules-buttons,
-    .question-display .question-buttons,
-    .results-display .finished-buttons {
+    .rules-display .rules-buttons .quit-button,
+    .rules-display .rules-buttons .continue-button,
+    .question-display .question-buttons .question-quit-button,
+    .question-display .question-buttons .next-button,
+    .results-display .finished-buttons .exit-button,
+    .results-display .finished-buttons .try-again-button {
         width: 38%;
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 10px;
         display: flex;
         justify-content: center;
     }
 
-    .question-display .question-area .food-pic,
-    .results-display .results-page-image {
-        height: 25vh;
-    }
-
     .question-display .question-area .question {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .question-display .multiple-choice-area {
@@ -307,10 +403,10 @@ body {
 
     .question-display .multiple-choice-area .answer-option {
         display: block;
-        font-size: 15px;
+        font-size: 20px;
         padding: 10px;
         margin: 10px;
-        width: 40%;
+        width: 42%;
     }
 
     .question-display .question-area .food-pic,
@@ -318,10 +414,13 @@ body {
         height: 27vh;
     }
 
+    .question-display .player-score {
+        margin: 5px;
+    }
+
     .question-display .player-score h3 {
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 200;
-        margin-top: 20px;
     }
 
     .results-display h3 {
@@ -331,7 +430,7 @@ body {
     }
 
     .results-display .final-user-score-message {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .results-display .final-user-score {
