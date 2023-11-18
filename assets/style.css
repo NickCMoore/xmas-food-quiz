@@ -228,6 +228,63 @@ body {
     font-weight: 200;
 }
 
+
+/*  Desktops, large screens */
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .game-content {
+        max-width: 700px;
+    }
+
+    .game-content h1 {
+        margin-top: 70px;
+        font-size: 100px;
+    }
+
+    .game-content p {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .game-content .start-button {
+        width: 28%;
+        font-size: 35px;
+    }
+
+    .rules-display,
+    .question-display {
+        height: 97%;
+        width: 90%;
+    }
+
+    .results-display {
+        height: 82%;
+    }
+
+    .rules-display .rules {
+        font-size: 40px;
+        padding: 20px;
+        margin-bottom: 35px;
+    }
+
+    .question-display .question-area .question {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+
+    .question-display .question-area .food-pic,
+    .results-display .results-page-image {
+        display: block;
+        height: 32vh;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+}
+
+/* iPads, Tablets */
+
 @media (min-width: 481px) and (max-width: 991px) {
     .game-content h1 {
         font-size: 75px;
@@ -324,6 +381,8 @@ body {
         margin: 5px;
     }
 }
+
+/*  Mobile devices. */
 
 @media (max-width: 480px) {
     body {
