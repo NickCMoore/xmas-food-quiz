@@ -255,6 +255,7 @@ The method from cloning a project from GitHub is below:
 * Tutorials on how to create a quiz game with JavaScript were found on Youtube, such as [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) and [Coding Nepal](https://www.youtube.com/watch?v=pQr4O1OITJo).
 * Information on hiding and showin divs was adapted from [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp).
 * The favicon was created courtesy of https://favicon.io/
+* Guide on how to insert tables into markdown files used from [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables#)
 
 ### Design <a name="design-credits"></a>
 
