@@ -125,7 +125,7 @@ Google Fonts was used to select a blend of fonts which would compliment each oth
 
 ## Testing <a name="testing"></a>
 
-For a detailed breakdown of testing, please see []() file.
+For a detailed breakdown of testing, please see [Testing](TESTING.md) file.
 
 ## Current Features <a name="current-features"></a>
 
@@ -254,6 +254,7 @@ The method from cloning a project from GitHub is below:
 * Content for the quiz questions was adapted from the [Best Quiz Questions](https://bestquizquestions.com/christmas-food-quiz/) website.
 * Tutorials on how to create a quiz game with JavaScript were found on Youtube, such as [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) and [Coding Nepal](https://www.youtube.com/watch?v=pQr4O1OITJo).
 * Information on hiding and showin divs was adapted from [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp).
+* The favicon was created courtesy of https://favicon.io/
 
 ### Design <a name="design-credits"></a>
 
@@ -264,6 +265,7 @@ The method from cloning a project from GitHub is below:
 ### Media <a name="media"></a>
 
 * Photos used were either from the [Pexels](https://www.pexels.com/) website.
+* All of the question images were compressed using [Convertio](https://convertio.co/)
 
 ### Acknowledgments <a name="acknowledgements"></a>
 
