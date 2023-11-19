@@ -6,6 +6,8 @@ The purpose of the project is to demonstrate knowledge of how to produce a user 
 
 [Link to live website](https://nickcmoore.github.io/xmas-food-quiz/)
 
+![Site responsiveness](assets/ReadMe%20images/responsive.png)
+
 ## Contents
 
 * [**User Experience (UX)**](<#user-experience-ux>)
