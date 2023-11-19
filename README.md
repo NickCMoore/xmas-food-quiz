@@ -72,37 +72,35 @@ I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pa
 
 ![alt text](assets/ReadMe%20images/Home_page%20(desktop).png)
 
-*Home screen*
+*Rules screen*
 
 ![alt text](assets/ReadMe%20images/rules%20(desktop).png)
 
-*Home screen*
+*Questions screen*
 
 ![alt text](assets/ReadMe%20images/questions%20(desktop).png)
 
-*Home screen*
+*Pass result screen*
 
 ![alt text](assets/ReadMe%20images/pass_result%20(desktop).png)
 
-*Home screen*
+*Fail result screen*
 
 ![alt text](assets/ReadMe%20images/fail_result%20(desktop).png)
 
 **
 
-![]()
-
 **Colour Scheme** <a name="colour-scheme"></a>
 
-By using the [Coolors]() website, I was able to select a colour palette that would be suitable for all users and visually appealing.
+By using the [Coolors](https://coolors.co/08415c-cc2936-6b818c-f1bf98) website, I was able to select a colour palette that would be suitable for all users and visually appealing. The scheme contains colours which are traditionally associated with Christmas, particularly #08415C and #CC2936. #6B818C was useful for providing user feedback on button hovers.
 
-![]()
+![Colour Scheme](assets/ReadMe%20images/colour_scheme.png)
 
 **Typography** <a name="typography"></a>
 
-Google Fonts was used to select a blend of fonts which would compliment each other and be accessible for all.
+Google Fonts was used to select a blend of fonts which would compliment each other and be accessible for all. Caveat was used for all headers and content text. This font was chosen as it provides a classical, 'Christmassy' feeling to help immerse the reader in the quiz.
 
-![]()
+![Caveat font](assets/ReadMe%20images/caveat.png)
 
 ## Technologies Used <a name="technologies-used"></a>
 
