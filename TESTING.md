@@ -24,11 +24,15 @@ I sent a deployed link to the quiz to many family members and friends who provid
 
 * __User Goals__ <a name="user-goals"></a>
 
-| User Goal                                                                                             | Description | Image     |
-| -----------                                                                                           | ----------- | --------- |
-| To quickly identify the purpose of the site as a Christmas Food Quiz.                                 |             |             
-| To easily access rules on how to play the game and easily exit the rules without disrupting the game. |           |
-| -----------                                                                                           |
+| **User Goal**                                                                                         | **Goal met?**        | **Image**                                                          |
+|-------------------------------------------------------------------------------------------------------|----------------------|--------------------------------------------------------------------|
+| To quickly identify the purpose of the site as a Christmas Food Quiz.                                 | Yes                  | ![Home screen entry point](assets/ReadMe%20images/home_screen.png) |
+| To easily access rules on how to play the game and easily exit the rules without disrupting the game. | Yes                  | ![Rules popup](assets/ReadMe%20images/rules_popup.png)             |
+| To exit the game at any point and, when finished, to be able to try again.                            | Yes                  | ![Navigation options](assets/ReadMe%20images/navigation.png)       |
+| To quickly get feedback on how I am performing (through the scoring system).                          | Yes                  | ![Scoring counter](assets/ReadMe%20images/scoring.png)             |
+| If I get a wrong answer, to be able to see what is the correct answer.                                | Yes                  | ![Incorrect option](assets/ReadMe%20images/incorrect_option.png)   |
+| To see my final score and get feedback on whether this is a good score.                               | Yes                  | ![Results screen (pass)](assets/ReadMe%20images/results_pass.png)  |
+| To have fun playing the game and feel a positive Christmas spirit having played!                      | Dependent on player! |                                                                    |
 
 
 ## Browser Testing <a name="browser-testing"></a>
