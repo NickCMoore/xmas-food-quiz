@@ -42,7 +42,7 @@ The purpose of the project is to demonstrate knowledge of how to produce a user 
 
 **Wireframes** <a name="wireframes"></a>
 
-I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pages in the site.
+I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pages in the site. The quiz was planned and eventually designed with mobile first in mind with a layout that wouldn't require any scrolling or complex navigation. The wireframes reflect a home page, a set of rules, the questions and then a results screen which is dependent on the user's final score.
 
 ### Mobile
 
