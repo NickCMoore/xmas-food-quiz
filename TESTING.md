@@ -51,7 +51,7 @@ Further details on all bugs can be found in the Bugs section.
 
 [Home Page](https://nickcmoore.github.io/xmas-food-quiz/) - following on from this testing, the home page had 1 error and no warnings.
 
-![W3C CSS Validator](assets/Testing%20images/W3C_HTML.png)
+![W3C HTML Validator](assets/Testing%20images/W3C_HTML.png)
 
 This error was easily rectified through the removal of the stray </p> tag!
 
@@ -68,7 +68,7 @@ During the build phase of the project, I resolved a number of bugs encountered w
 
 I performed HTML Validation testing on the site and found the following errors with the home page.
 
-![Beeston Castle Home Page HTML Validator testing](media/w3c-html.png)
+![HTML Validator testing](assets/Testing%20images/W3C_HTML.png)
 
 * Error: No p element in scope but a p end tag seen. There was a stray </p> tag which was removed.
 
