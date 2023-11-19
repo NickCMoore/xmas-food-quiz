@@ -19,7 +19,7 @@ The purpose of the project is to demonstrate knowledge of how to produce a user 
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Current Features**](<#current-features>)
-    * [Common Features](<#common-features>)
+* [**Future Features**](<#future-features>)
 * [**Deployment**](<#deployment>)
     * [Deploying](<#deploying>)
     * [Forking](<#forking>)
@@ -31,14 +31,17 @@ The purpose of the project is to demonstrate knowledge of how to produce a user 
     * [Design](<#design-credits>)
     * [Acknowledgements](<#acknowledgements>)
 
-* [**Future Features**](<#future-features>)
-* [**Acknowledgements**](<#acknowledgements>)
-
 ## User Experience (UX) <a name="user-experience-ux"></a>
 
 ### User Stories <a name="user-stories"></a>
 
-**Visitor Goals**
+- To quickly identify the purpose of the site as a Christmas Food Quiz.
+- To easily access rules on how to play the game and easily exit the rules without disrupting the game.
+- To exit the game at any point and, when finished, to be able to try again.
+- To quickly get feedback on how I am performing (through the scoring system).
+- If I get a wrong answer, to be able to see what is the correct answer.
+- To see my final score and get feedback on whether this is a good score.
+- To have fun playing the game and feel a positive Christmas spirit having played!
 
 ## Design <a name="design"></a>
 
@@ -126,11 +129,96 @@ For a detailed breakdown of testing, please see []() file.
 
 ## Current Features <a name="current-features"></a>
 
-### Common Features <a name="common-features"></a>
+### Home Screen
 
-* __ __
+- Short welcome message with start button that enables the user to immediately navigate to the quiz (once they have seen the rules).
 
-* 
+![Home screen entry point](assets/ReadMe%20images/home_screen.png)
+
+### Rules Screen
+
+- Upon clicking the previous 'start quiz' button, the user is taken to a rules popup. This is designed to quickly familiarise the user with the mechanics of the game and not be confused once the game commences. The background is blurred out to provide further focus for the user. At this point, buttons are available to either start the quiz or return to the home screen if necessary.
+
+![Rules popup](assets/ReadMe%20images/rules_popup.png)
+
+### Question Screen
+
+- Forming the core of the quiz, the user is immediately presented with a question and four clickable multiple choice option answers, a relevant Christmas food image, a countdown timer, a scoring counter and navigation options.
+
+![Question area](assets/ReadMe%20images/question_popup.png)
+
+**Questions**
+
+- The user is shown one question and the question number from an array of questions. Above the question, the question number updates when the user moves on to the next question.
+
+![Questions](assets/ReadMe%20images/question_and_number.png)
+
+**Countdown Timer**
+
+- To provide some fun pressure when answering the questions, the user is given 20 seconds in the form of a countdown timer to answer the questions.
+
+![Countdown timer](assets/ReadMe%20images/countdown_timer.png)
+
+- Once the clock reaches zero and if the user hasn't selected any options, the options will be disabled and theu will be given a score of zero. The user is still able to exit the quiz or go on to the next question after this if they want.
+
+![Greyed out options](assets/ReadMe%20images/out_of_time.png)
+
+**Multiple choice options**
+
+- As mentioned above, if the user doesn't select an answer within the timeframe, the four answer options are greyed out.
+- If they select a correct answer, this option turns green and they can move forwards:
+
+![Correct option](assets/ReadMe%20images/correct_option.png)
+
+- If the user select the wrong option, this selection turns red and the correct answer is shown in green. Once this happens, the user is able to select next to move forwards.
+
+![Incorrect option](assets/ReadMe%20images/incorrect_option.png)
+
+**Scoring system**
+
+- To provide the user with instant feedback on how they are getting on, there is a scoring system which is displayed and updated for every question. If the user gets the answer correct, they are awarded 10 points, which is which displayed at the bottom of the question area.
+
+![Scoring counter](assets/ReadMe%20images/scoring.png)
+
+**Navigation**
+
+- The user is able to click exit upon entering the question screen, but they are unable to click next until they select an answer option or the timer runs out.
+
+![Navigation options](assets/ReadMe%20images/navigation.png)
+
+### Results Screen
+
+**Fail result**
+
+- If the user score less than 100 points (10 correct questions out of 20), they will be presented with the fail screen. This is intended to be light hearted and presents the user with a consoling message and also a picture of some sad people around the Christmas table!
+
+![Results screen (fail)](assets/ReadMe%20images/results_fail.png)
+
+**Pass result**
+
+- If the user score less more than 100 points, (11 or more questions correct out of 20), they will be presented with a pass screen. Once again, this is intended to be fun and the user is congratulated on their score and shown a picture of some VERY happy people around the Christmas table!
+
+![Results screen (pass)](assets/ReadMe%20images/results_pass.png)
+
+**Results screen navigation**
+
+- Once the user is presented with either results screen, they may immediately exit the quiz and return to the home screen or try again which will take them to the start of the quiz (after the rules screen). The intention of this is to give the user choice and the ability to dive back in to the quiz right away if they want.
+
+![Results screen navigation](assets/ReadMe%20images/results_nav.png)
+
+
+
+
+
+
+
+
+
+## Future Features <a name="future-faetures">></a>
+
+- Random ordering of the questions to provide more variety on repeated playthroughs.
+- Implementation of a leaderboard so users can see how they compare to their peers.
+- Use of music to further immerse the user into the Christmas Quiz.
 
 ![]()
 
