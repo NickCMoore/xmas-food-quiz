@@ -60,6 +60,12 @@ No errors were found using this CSS valildator.
 
 ![W3C CSS Validator](assets/Testing%20images/W3C_CSS.png)
 
+### JSHint JavaScript Linter Results <a name="linter-results"></a>
+
+![JavaScript testing main page - JSHint](assets/Testing%20images/jshint_main.png)
+
+![JavaScript testing report - JSHint](assets/Testing%20images/jshint_report.png)
+
 ## Bugs <a name="known-bugs"></a>
 
 ### Resolved <a name="resolved-bugs"></a>
