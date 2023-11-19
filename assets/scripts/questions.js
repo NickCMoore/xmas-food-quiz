@@ -14,7 +14,7 @@ let questions = [
         optionC: "Roast Beef",
         optionD: "Lamb",
         correctAnswer: "B",
-        img: "turkey.jpg",
+        img: "turkey_v2.jpg",
     },
 
     {
