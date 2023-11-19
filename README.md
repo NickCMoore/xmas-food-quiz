@@ -46,18 +46,36 @@ I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pa
 
 ### Mobile
 
+*Home screen*
 ![alt text](assets/ReadMe%20images/Home_page%20(mobile).png)
+
+*Rules screen*
 ![alt text](assets/ReadMe%20images/rules%20(mobile).png)
+
+*Questions screen*
 ![alt text](assets/ReadMe%20images/questions%20(mobile).png)
+
+*Pass result screen*
 ![alt text](assets/ReadMe%20images/pass_result%20(mobile).png)
+
+*Fail result screen*
 ![alt text](assets/ReadMe%20images/fail_result%20(mobile).png)
 
 ### Desktop
 
+*Home screen*
 ![alt text](assets/ReadMe%20images/Home_page%20(desktop).png)
+
+*Home screen*
 ![alt text](assets/ReadMe%20images/rules%20(desktop).png)
+
+*Home screen*
 ![alt text](assets/ReadMe%20images/questions%20(desktop).png)
+
+*Home screen*
 ![alt text](assets/ReadMe%20images/pass_result%20(desktop).png)
+
+*Home screen*
 ![alt text](assets/ReadMe%20images/fail_result%20(desktop).png)
 
 **
