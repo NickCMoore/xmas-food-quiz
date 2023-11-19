@@ -108,6 +108,8 @@ Google Fonts was used to select a blend of fonts which would compliment each oth
 
 * [CSS3](https://en.wikipedia.org/wiki/CSS) - CSS3 used to implement styling for the quiz.
 
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - JavaScript used for game functions and logic.
+
 * [Github](https://github.com/) - GitHub was used to store, manage, track and control code changes for the quiz.
 
 * [Gitpod](https://www.gitpod.io/) - Gitpod was used for website deployment.
@@ -164,21 +166,24 @@ The method from cloning a project from GitHub is below:
 
 ### Code <a name="code"></a>
 
-*
+* Code for displaying the quiz questions, keeping score and displaying the quiz results was adapted from and article by Yaphi Berhanu amd James Hibbard on [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/)
+* Code on how to create a JavaScript timer was adapted from [Stack Overflow](https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript)
 
 ### Content <a name="content"></a>
 
-*
+* Content for the quiz questions was adapted from the [Best Quiz Questions](https://bestquizquestions.com/christmas-food-quiz/) website.
+* Tutorials on how to create a quiz game with JavaScript were found on Youtube, such as [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) and [Coding Nepal](https://www.youtube.com/watch?v=pQr4O1OITJo).
+* Information on hiding and showin divs was adapted from [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp).
 
 ### Design <a name="design-credits"></a>
 
 * [Balsamiq](https://balsamiq.com/) - was used to generate the wireframes for the project.
 * The colour palette for the site was chosen with accessibility in mind from the [Coolors]() site.
-* The following fonts used throughout the site and were imported from Google Fonts - 
+* The following fonts used throughout the site and were imported from Google Fonts - Caveat.
 
 ### Media <a name="media"></a>
 
-*
+* Photos used were either from the Pexels website.
 
 ### Acknowledgments <a name="acknowledgements"></a>
 
