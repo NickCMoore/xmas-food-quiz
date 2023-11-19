@@ -37,7 +37,7 @@ body {
 }
 
 .game-content {
-    max-width: 900px;
+    max-width: 800px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -45,12 +45,12 @@ body {
 
 /* Styles for heading and paragraph within game content */
 .game-content h1 {
-    font-size: 130px;
+    font-size: 90px;
     font-weight: 500;
 }
 
 .game-content p {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 45px;
 }
@@ -228,21 +228,84 @@ body {
     font-weight: 200;
 }
 
+/* 4K monitors and TVs */
+
+@media (min-width: 3840px) {
+    .game-content {
+        max-width: 1200px;
+    }
+
+    .game-content h1 {
+        font-size: 170px;
+    }
+
+    .game-content p {
+        font-size: 75px;
+        margin: 50px;
+    }
+
+    .game-content .start-button {
+        font-size: 55px;
+    }
+
+    .rules-display,
+    .question-display,
+    .results-display {
+        max-width: 1300px;
+        width: 90%;
+        padding: 15px 25px;
+    }
+
+    /* Styles for specific display elements */
+    .rules-display .rules {
+        font-size: 65px;
+    }
+
+    .rules-display h2,
+    .question-display h3,
+    .results-display h3 {
+        font-size: 90px;
+    }
+
+    .rules-display .rules-buttons .quit-button,
+    .question-display .question-buttons .question-quit-button,
+    .results-display .finished-buttons .exit-button,
+    .rules-display .rules-buttons .continue-button,
+    .question-display .question-buttons .next-button,
+    .results-display .finished-buttons .try-again-button {
+        font-size: 60px;
+    }
+
+    .question-display .question-area .question {
+        font-size: 65px;
+    }
+
+
+    .question-display .multiple-choice-area .answer-option {
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+    }
+
+    .results-display .final-user-score-message {
+        font-size: 65px;
+    }
+}
 
 /*  Desktops, large screens */
 
 @media (min-width: 992px) and (max-width: 1300px) {
     .game-content {
-        max-width: 700px;
+        max-width: 600px;
     }
 
     .game-content h1 {
         margin-top: 70px;
-        font-size: 100px;
+        font-size: 72px;
     }
 
     .game-content p {
-        font-size: 40px;
+        font-size: 33px;
         text-align: center;
         margin-top: 50px;
     }
@@ -253,6 +316,11 @@ body {
     }
 
     .rules-display,
+    .question-display {
+        height: 93%;
+        width: 90%;
+    }
+
     .question-display {
         height: 97%;
         width: 90%;
@@ -391,14 +459,14 @@ body {
 
     .game-content h1 {
         font-size: 50px;
-        margin-top: 140px;
+        margin-top: 80px;
         margin-bottom: 20px;
     }
 
     .game-content p {
-        font-size: 30px;
-        margin-bottom: 20px;
-        width: 85%;
+        font-size: 25px;
+        margin-bottom: 60px;
+        width: 90%;
     }
 
     .game-content .start-button {
@@ -409,27 +477,18 @@ body {
     .rules-display,
     .question-display,
     .results-display {
-        height: 98%;
         width: 93%;
     }
 
     .rules-display h2,
     .question-display h3,
     .results-display h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .rules-display .rules {
         font-size: 25px;
         margin-bottom: 32px;
-    }
-
-    #timer-section {
-        margin: 5px;
-    }
-
-    #timer {
-        font-size: 30px;
     }
 
     .rules-display .rules-buttons .quit-button,
@@ -446,7 +505,7 @@ body {
     }
 
     .question-display .question-area .question {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .question-display .multiple-choice-area {
@@ -480,6 +539,15 @@ body {
     .question-display .player-score h3 {
         font-size: 25px;
         font-weight: 200;
+    }
+
+    #timer-section {
+        display: inline-block;
+        margin: 1px;
+    }
+
+    #timer {
+        font-size: 20px;
     }
 
     .results-display h3 {
