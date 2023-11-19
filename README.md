@@ -212,8 +212,6 @@ Once the user is presented with either results screen, they may immediately exit
 - Implementation of a leaderboard so users can see how they compare to their peers.
 - Use of music to further immerse the user into the Christmas Quiz.
 
-![]()
-
 ## Deployment <a name="deployment"></a>
 
 ### Deploying The Project <a name="deploying"></a>
@@ -224,7 +222,7 @@ The site was deployed to GitHub pages. The steps to deploy a site are as follows
 * Once in Settings, navigate to the Pages tab down the side menu.
 * Under Source, select the branch to master, then click save.
 * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate a successful deployment.
-* The GitHub repository live link is here - []()
+* The GitHub repository live link is here - [Christmas Food Quiz](https://nickcmoore.github.io/xmas-food-quiz/)
 
 ### Forking The Repository Using GitHub <a name="forking"></a>
 
@@ -265,7 +263,7 @@ The method from cloning a project from GitHub is below:
 
 ### Media <a name="media"></a>
 
-* Photos used were either from the Pexels website.
+* Photos used were either from the [Pexels](https://www.pexels.com/) website.
 
 ### Acknowledgments <a name="acknowledgements"></a>
 
