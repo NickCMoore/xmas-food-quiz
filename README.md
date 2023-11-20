@@ -244,7 +244,7 @@ The method from cloning a project from GitHub is below:
 
 ### Code <a name="code"></a>
 
-* Code for displaying the quiz questions, keeping score and displaying the quiz results was adapted from and article by Yaphi Berhanu and James Hibbard on [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/)
+* Code for displaying the quiz questions, keeping score and displaying the quiz results was adapted from an article by Yaphi Berhanu and James Hibbard on [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/)
 * Code on how to create a JavaScript timer was adapted from [Stack Overflow](https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript)
 
 ### Content <a name="content"></a>

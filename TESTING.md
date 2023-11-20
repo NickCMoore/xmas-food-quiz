@@ -120,6 +120,7 @@ Upon resolving this error in the W3C Validator, no further errors remain.
 * Performance at mobile resolutions slightly impacted by large contentful paints load times. Have somewhat addressed this through resizing of images for mobile.
 * Some issues with answer option alignment at tablet resolutions. The issue was with the options being impacted by other containers on the page.
 * Sometimes, navigation options would appear beyond the question area for larger questions on some devices. For most devices and resolutions this has been fixed, but it may remain for some screens. Extending the question area and reducing the font size on the questions working to some extent but had an effect on larger devices within the tablet media query range. This meant that the text would then appear too small on these devices and the question area would have too much dead space. Hopefully a compromise has been reached which prevents buttons going beyond the view area on smaller tablets but also keeping the text a decent size on larger tablets. The range of the media query is not too large, so this workaround should hopefully provide a good solution for most devices.
+* Timer function still executes in background on results and home screen (when exiting the quiz). Does not cause any impact to the user playing the game and does not interfere with subsequent playthroughs. To be fixed in future releases.
 
 ## Further Testing <a name="further-testing"></a>
 
