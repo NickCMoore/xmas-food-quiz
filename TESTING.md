@@ -73,7 +73,7 @@ Further details on all bugs can be found in the Bugs section.
 
 ![W3C HTML Validator](assets/Testing%20images/W3C_HTML.png)
 
-This error was easily rectified through the removal of the stray tag!
+This error was easily rectified through the removal of the stray paragraph closing tag!
 
 ### W3C CSS Validator Results <a name="w3c-css-results"></a>
 No errors were found using this CSS valildator.
@@ -81,11 +81,16 @@ No errors were found using this CSS valildator.
 ![W3C CSS Validator](assets/Testing%20images/W3C_CSS.png)
 
 ### JSHint JavaScript Linter Results <a name="linter-results"></a>
-As a result of the Linter JavaScript testing, 12 warnings and one 'unused variable' flag cropped up. These were simple bug fixes - the missing semicolons were inserted into the relevant lines of code and the 'optionList' variable in line 19 was removed from the JS code.
+As a result of the [JSHint](https://jshint.com/) Linter JavaScript testing, 12 warnings and one 'unused variable' flag cropped up. These were simple bug fixes - the missing semicolons were inserted into the relevant lines of code and the 'optionList' variable in line 19 was removed from the JS code.
 
+**JSHint Linter testing**
 ![JavaScript testing main page - JSHint](assets/Testing%20images/jshint_main.png)
 
+**JSHint Linter report**
 ![JavaScript testing report - JSHint](assets/Testing%20images/jshint_report.png)
+
+**JSHint Linter improvement**
+![JavaScript improvement - JSHint](assets/Testing%20images/linter_improvement.png)
 
 ## Bugs <a name="known-bugs"></a>
 
@@ -97,7 +102,7 @@ I performed HTML Validation testing on the site and found the following errors w
 
 ![HTML Validator testing](assets/Testing%20images/W3C_HTML.png)
 
-* Error: No p element in scope but a p end tag seen. There was a stray </p> tag which was removed.
+* Error: No p element in scope but a p end tag seen. There was a stray paragraph closing tag which was removed.
 
 Upon resolving this error in the W3C Validator, no further errors remain.
 
