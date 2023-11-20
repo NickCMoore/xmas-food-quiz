@@ -36,13 +36,13 @@ I sent a deployed link to the quiz to many family members and friends who provid
 The website was tested by myself on a range of modern browsers including Chrome, Edge and Brave. Load times were generally quick and no specific issues were encountered during this phase of testing.
 
 - Chrome testing
-[Chrome test](assets/Testing%20images/chrome_testing.png)
+![Chrome test](assets/Testing%20images/chrome_testing.png)
 
 - Edge testing
-[Edge test](assets/Testing%20images/edge_testing.png)
+![Edge test](assets/Testing%20images/edge_testing.png)
 
 - Brave testing
-[Brave test](assets/Testing%20images/brave_testing.png)
+![Brave test](assets/Testing%20images/brave_testing.png)
 
 ## Compatability and Responsiveness Testing <a name="compatability-responsiveness-testing"></a>
 The website was tested on various monitors including a 27 inch monitor (3840 x 2160), a laptop (1920 x 1080), an iPhone 13 Pro (390 x 844) and an iPad (1536 x 2048). All media queries coded in CSS executed correctly when required.
