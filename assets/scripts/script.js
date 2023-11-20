@@ -16,8 +16,6 @@ const finalUserScore = document.querySelector('.final-user-score');
 const resultsDisplay = document.querySelector('.results-display');
 const exitButton = document.querySelector('.exit-button');
 const tryAgainButton = document.querySelector('.try-again-button');
-const optionList = document.querySelector('.multiple-choice-area');
-
 
 /**
  * Event handler for the "Start" button click.
@@ -27,7 +25,7 @@ startButton.onclick = () => {
     console.log('Start button clicked');
     rulesDisplay.classList.add('active');
     main.classList.add('active');
-}
+};
 
 /**
  * Event handler for the "Quit" button in the rules screen.
@@ -37,7 +35,7 @@ quitButton.onclick = () => {
     console.log('Quit button clicked');
     rulesDisplay.classList.remove('active');
     main.classList.remove('active');
-}
+};
 
 /**
  * Event handler for the "Continue" button in the rules screen.
@@ -48,16 +46,16 @@ continueButton.onclick = () => {
     questionDisplay.classList.add('active');
     rulesDisplay.classList.remove('active');
     showQuestions(0);
-}
+};
 
 /**
  * Event handler for leaving quiz and returning to the home screen.
  */
 questionQuitButton.onclick = () => {
     console.log('Question Quit button clicked');
-    questionDisplay.classList.remove('active')
+    questionDisplay.classList.remove('active');
     main.classList.remove('active');
-}
+};
 
 /**
  * Event handler for the "Exit" button in the results screen.
@@ -74,7 +72,7 @@ exitButton.onclick = () => {
     updateScore();
 
     showQuestions(0);
-}
+};
 
 /**
  * Event handler for the "Try Again" button in the results screen.
@@ -88,7 +86,7 @@ tryAgainButton.onclick = () => {
     questionCount = 0;
     updateScore();
     showQuestions(0);
-}
+};
 
 /**
  * Event handler for the "Next" button.
@@ -109,7 +107,7 @@ nextButton.onclick = () => {
     } else {
         console.log('Click an answer before moving forwards');
     }
-}
+};
 
 /**
  * Variables to track the quiz and user's progress.
@@ -186,8 +184,8 @@ function showQuestions(index) {
     clearInterval(myInterval);
     counter = 0;
 
-    questionPic.setAttribute('src', "assets/images/" + questions[index].img)
-    startTimer()
+    questionPic.setAttribute('src', "assets/images/" + questions[index].img);
+    startTimer();
 
     const optionButtons = document.querySelectorAll('.answer-option');
 
@@ -215,7 +213,7 @@ function showQuestions(index) {
     document.querySelector('#optionC').textContent = `${questions[index].optionC}`;
     document.querySelector('#optionD').textContent = `${questions[index].optionD}`;
 
-    stopOptionsOnClick = false
+    stopOptionsOnClick = false;
 
     console.log('Finished showing question.');
 }
@@ -235,7 +233,7 @@ function answerSelect(selectedOption) {
     console.log('Selected Option: ' + selectedOption);
 
     if (stopOptionsOnClick) {
-        const optionStop = document.querySelectorAll('.answer-option')
+        const optionStop = document.querySelectorAll('.answer-option');
         optionStop.forEach(button => {
             button.disabled = true;
         });
