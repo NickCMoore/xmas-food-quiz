@@ -84,12 +84,15 @@ No errors were found using this CSS valildator.
 As a result of the [JSHint](https://jshint.com/) Linter JavaScript testing, 12 warnings and one 'unused variable' flag cropped up. These were simple bug fixes - the missing semicolons were inserted into the relevant lines of code and the 'optionList' variable in line 19 was removed from the JS code.
 
 **JSHint Linter testing**
+
 ![JavaScript testing main page - JSHint](assets/Testing%20images/jshint_main.png)
 
 **JSHint Linter report**
+
 ![JavaScript testing report - JSHint](assets/Testing%20images/jshint_report.png)
 
 **JSHint Linter improvement**
+
 ![JavaScript improvement - JSHint](assets/Testing%20images/linter_improvement.png)
 
 ## Bugs <a name="known-bugs"></a>
@@ -118,7 +121,7 @@ The results were as follows:
 
 __Desktop__
 
-![Lighthouse]()
+![Lighthouse](assets/Testing%20images/lighthouse_desktop.png)
 
 __Mobile__
 
