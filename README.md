@@ -244,14 +244,14 @@ The method from cloning a project from GitHub is below:
 
 ### Code <a name="code"></a>
 
-* Code for displaying the quiz questions, keeping score and displaying the quiz results was adapted from and article by Yaphi Berhanu amd James Hibbard on [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/)
+* Code for displaying the quiz questions, keeping score and displaying the quiz results was adapted from and article by Yaphi Berhanu and James Hibbard on [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/)
 * Code on how to create a JavaScript timer was adapted from [Stack Overflow](https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript)
 
 ### Content <a name="content"></a>
 
 * Content for the quiz questions was adapted from the [Best Quiz Questions](https://bestquizquestions.com/christmas-food-quiz/) website.
 * Tutorials on how to create a quiz game with JavaScript were found on Youtube, such as [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) and [Coding Nepal](https://www.youtube.com/watch?v=pQr4O1OITJo).
-* Information on hiding and showin divs was adapted from [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp).
+* Information on hiding and showing divs was adapted from [W3Schools](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp).
 * The favicon was created courtesy of https://favicon.io/
 * Guide on how to insert tables into markdown files used from [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables#)
 
