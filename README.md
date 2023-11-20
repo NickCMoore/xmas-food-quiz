@@ -53,45 +53,45 @@ I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pa
 
 *Home screen*
 
-![alt text](assets/ReadMe%20images/Home_page%20(mobile).png)
+![Home screen](assets/ReadMe%20images/Home_page%20_mobile.png)
 
 *Rules screen*
 
-![alt text](assets/ReadMe%20images/rules%20(mobile).png)
+![Rules screen](assets/ReadMe%20images/rules%20_mobile.png)
 
 *Questions screen*
 
-![alt text](assets/ReadMe%20images/questions%20(mobile).png)
+![Questions screen](assets/ReadMe%20images/questions%20_mobile.png)
 
 *Pass result screen*
 
-![alt text](assets/ReadMe%20images/pass_result%20(mobile).png)
+![Pass result screen](assets/ReadMe%20images/pass_result%20_mobile.png)
 
 *Fail result screen*
 
-![alt text](assets/ReadMe%20images/fail_result%20(mobile).png)
+![Fail result screen](assets/ReadMe%20images/fail_result%20_mobile.png)
 
 ### Desktop
 
 *Home screen*
 
-![alt text](assets/ReadMe%20images/Home_page%20(desktop).png)
+![Home screen](assets/ReadMe%20images/Home_page%20_desktop.png)
 
 *Rules screen*
 
-![alt text](assets/ReadMe%20images/rules%20(desktop).png)
+![Rules screen](assets/ReadMe%20images/rules%20_desktop.png)
 
 *Questions screen*
 
-![alt text](assets/ReadMe%20images/questions%20(desktop).png)
+![Questions screen](assets/ReadMe%20images/questions%20_desktop.png)
 
 *Pass result screen*
 
-![alt text](assets/ReadMe%20images/pass_result%20(desktop).png)
+![Pass result screen](assets/ReadMe%20images/pass_result%20_desktop.png)
 
 *Fail result screen*
 
-![alt text](assets/ReadMe%20images/fail_result%20(desktop).png)
+![Fail result screen](assets/ReadMe%20images/fail_result%20_desktop.png)
 
 **Colour Scheme** <a name="colour-scheme"></a>
 

@@ -80,7 +80,7 @@ let questions = [
         optionC: "Potatoes",
         optionD: "Meatballs",
         correctAnswer: "C",
-        img: "Janssons frestelse.jpg"
+        img: "Janssons_frestelse.jpg"
     },
 
     {
