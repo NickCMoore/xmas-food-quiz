@@ -93,11 +93,9 @@ I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pa
 
 ![alt text](assets/ReadMe%20images/fail_result%20(desktop).png)
 
-**
-
 **Colour Scheme** <a name="colour-scheme"></a>
 
-By using the [Coolors](https://coolors.co/08415c-cc2936-6b818c-f1bf98) website, I was able to select a colour palette that would be suitable for all users and visually appealing. The scheme contains colours which are traditionally associated with Christmas, particularly #08415C and #CC2936. #6B818C was useful for providing user feedback on button hovers.
+By using the [Coolors](https://coolors.co/08415c-cc2936-6b818c-f1bf98) website, I was able to select a colour palette that would be suitable for all users and visually appealing. The scheme contains colours which are traditionally associated with Christmas, particularly #08415C and #CC2936. #6B818C was useful for providing user feedback on button hovers. These colours work well together to immerse the user in the game, strengthening that association with Christmas.
 
 ![Colour Scheme](assets/ReadMe%20images/colour_scheme.png)
 
@@ -131,7 +129,7 @@ For a detailed breakdown of testing, please see [Testing](TESTING.md) file.
 
 ### Home Screen
 
-Short welcome message with start button that enables the user to immediately navigate to the quiz (once they have seen the rules).
+On loading the quiz, the user is presented with a full page background of Christmas foods and items. This is designed to immerse the user immediately in the feel of the game. A short welcome message is also present with a start button that enables the user to immediately navigate to the quiz (once they have seen the rules). There are no other distracting buttons or items on the screen in order to make the user journey as seamless as possible.
 
 ![Home screen entry point](assets/ReadMe%20images/home_screen.png)
 
