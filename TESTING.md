@@ -5,16 +5,22 @@
 * [**User Testing**](<#user-testing>)
     * [Testing User Stories](<#testing-user-stories>)
 * [**Browser Testing**](<#browser-testing>)
-    * [Testing User Stories](<#testing-user-stories>)
-         * [User Goals](<#user-goals>)
+    * [Chrome testing](<#chrome-testing>)
+    * [Edge testing](<#edge-testing>)
+    * [Brave testing](<#brave-testing>)
 * [**Compatability and Responsiveness Testing**](<#compatability-responsiveness-testing>)
+    * [iPhone testing](<#iPhone-testing>)
+    * [iPad testing](<#iPad-testing>)
+    * [1080p monitor testing](<#1080p-testing>)
+    * [4K monitor testing](<#4K-testing>)
 * [**Code Validation Testing**](<#code-validation-testing>)
     * [W3C HTML Validator Results](<#w3c-html-results>)
     * [W3C CSS Validator Results](<#w3c-css-results>)
+    * [JSHint Linter JavaScript Results](<#linter-results>)
 * [**Bugs**](<#bugs>)
     * [Resolved](<#resolved-bugs>)
     * [Unresolved](<#unresolved-bugs>)
-* [**Further Testing**](<#known-bugs>)
+* [**Further Testing**](<#further-testing>)
 
 ## User Testing  <a name="user-testing"></a>
 I sent a deployed link to the quiz to many family members and friends who provide constructive feedback and also simulated the user goals (listed at the beginning of the Readme document). I encouraged them to think from the perspective of a potential user who might visit the site. This testing gave me an opportunity to see how the website would perform on a range of devices. No major display and navigation issues were encountered.
@@ -35,13 +41,13 @@ I sent a deployed link to the quiz to many family members and friends who provid
 ## Browser Testing <a name="browser-testing"></a>
 The website was tested by myself on a range of modern browsers including Chrome, Edge and Brave. Load times were generally quick and no specific issues were encountered during this phase of testing.
 
-**Chrome testing**
+**Chrome testing** <a name="chrome-testing"></a>
 ![Chrome test](assets/Testing%20images/chrome_testing.png)
 
-**Edge testing**
+**Edge testing** <a name="edge-testing"></a>
 ![Edge test](assets/Testing%20images/edge_testing.png)
 
-**Brave testing**
+**Brave testing** <a name="brave-testing"></a>
 ![Brave test](assets/Testing%20images/brave_testing.png)
 
 ## Compatability and Responsiveness Testing <a name="compatability-responsiveness-testing"></a>
@@ -49,16 +55,16 @@ The website was tested on various monitors including a 27 inch monitor (3840 x 2
 
 I also tested the quiz at different resolutions throughout the build process on Google Chrome Dev Tools. The following simulated devices were tested on Dev Tools - Galaxy Fold (280 x 653), iPhone 12 Pro (390 x 844), iPad Air (820 x 1180). In Dev Tools, I also tested the devices at the following common resolutions - 1280 x 720 (HD), 1920 X 1080 (FHD), 2560 X 1440 (QHD) and 3840 X 2160 (4K). Some examples of the testing carried out for this phase have been included below:
 
-**iPhone testing**
+**iPhone testing** <a name="iPhone-testing"></a>
 ![iPhone test](assets/Testing%20images/iPhone%2014%20Pro%20Max%20test.png)
 
-**iPad testing**
+**iPad testing** <a name="iPad-testing"></a>
 ![iPad test](assets/Testing%20images/iPad%20Pro%20test.png)
 
-**1080p monitor testing**
+**1080p monitor testing** <a name="1080p-testing"></a>
 ![1080p test](assets/Testing%20images/1080p%20test.png)
 
-**4K monitor testing**
+**4K monitor testing** <a name="4K-testing"></a>
 ![4K test](assets/Testing%20images/4k%20test.png)
 
 To double check the responsiveness and use an alternative to Dev Tools, I used the [Responsive Design Checker](https://www.responsivedesignchecker.com/) site to test all of the above resolutions.
@@ -95,7 +101,7 @@ As a result of the [JSHint](https://jshint.com/) Linter JavaScript testing, 12 w
 
 ![JavaScript improvement - JSHint](assets/Testing%20images/linter_improvement.png)
 
-## Bugs <a name="known-bugs"></a>
+## Bugs <a name="bugs"></a>
 
 ### Resolved <a name="resolved-bugs"></a>
 
@@ -109,7 +115,7 @@ I performed HTML Validation testing on the site and found the following errors w
 
 Upon resolving this error in the W3C Validator, no further errors remain.
 
-### Unresolved <a name="resolved-bugs"></a>
+### Unresolved <a name="unresolved-bugs"></a>
 
 * 
 
