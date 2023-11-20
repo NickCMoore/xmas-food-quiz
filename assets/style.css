@@ -372,6 +372,7 @@ body {
     .question-display,
     .results-display {
         width: 85%;
+        height: 98%;
     }
 
     .rules-display h2,
@@ -381,7 +382,7 @@ body {
     }
 
     .rules-display .rules {
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 32px;
     }
 
@@ -391,7 +392,7 @@ body {
     .question-display .question-buttons .next-button,
     .results-display .finished-buttons .exit-button,
     .results-display .finished-buttons .try-again-button {
-        font-size: 40px;
+        font-size: 30px;
         display: flex;
         justify-content: center;
         width: 38%;
@@ -408,13 +409,15 @@ body {
 
     .question-display .multiple-choice-area {
         font-size: 20px;
-        width: fit-content;
+        align-items: center;
         margin: 15px
     }
 
     .question-display .multiple-choice-area .answer-option {
         display: block;
-        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
         margin: 10px;
         width: 40%;
     }
@@ -453,45 +456,45 @@ body {
 
 @media (min-width: 351px) and (max-width: 479px) {
     .game-content h1 {
-        font-size: 55px;
-        margin-top: 80px;
+        font-size: 50px;
+        margin-top: 95px;
         margin-bottom: 20px;
     }
 
     .game-content p {
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: 60px;
         width: 90%;
     }
 
     .game-content .start-button {
         width: 40%;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .rules-display {
-        height: 78%;
+        height: 92%;
     }
 
     .question-display,
     .results-display {
         width: 95%;
-        height: 92%;
+        height: 96%;
     }
 
     .results-display {
         width: 95%;
-        height: 70%;
+        height: 78%;
     }
 
     .rules-display h2,
     .question-display h3,
     .results-display h3 {
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .rules-display .rules {
-        font-size: 28px;
+        font-size: 22px;
         padding: 1px;
         margin: 12px;
     }
@@ -503,14 +506,14 @@ body {
     .results-display .finished-buttons .exit-button,
     .results-display .finished-buttons .try-again-button {
         width: 40%;
-        font-size: 28px;
+        font-size: 20px;
         margin-top: 10px;
         display: flex;
         justify-content: center;
     }
 
     .question-display .question-area .question {
-        font-size: 32px;
+        font-size: 25px;
     }
 
     .question-display .multiple-choice-area {
@@ -526,7 +529,7 @@ body {
 
     .question-display .multiple-choice-area .answer-option {
         display: block;
-        font-size: 30px;
+        font-size: 20px;
         padding: 5px;
         margin: 10px;
         width: 41%;
@@ -538,7 +541,7 @@ body {
     }
 
     .question-display .player-score h3 {
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 200;
     }
 
@@ -548,20 +551,20 @@ body {
     }
 
     #timer {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .results-display h3 {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 400;
     }
 
     .results-display .final-user-score-message {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .results-display .final-user-score {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .question-display .question-buttons,
@@ -595,7 +598,7 @@ body {
     }
 
     .rules-display {
-        height: 90%;
+        height: 85%;
     }
 
     .question-display,
