@@ -19,7 +19,7 @@
 ## User Testing  <a name="user-testing"></a>
 I sent a deployed link to the quiz to many family members and friends who provide constructive feedback and also simulated the user goals (listed at the beginning of the Readme document). I encouraged them to think from the perspective of a potential user who might visit the site. This testing gave me an opportunity to see how the website would perform on a range of devices. No major display and navigation issues were encountered.
 
-### Testing User Stories from User Experience (UX) Section <a name="testing-user-stories"></a>
+### Testing User Stories from User Experience (UX) Section of [ReadMe](README.md) <a name="testing-user-stories"></a>
 
 * __User Goals__ <a name="user-goals"></a>
 
@@ -31,10 +31,18 @@ I sent a deployed link to the quiz to many family members and friends who provid
 | To quickly get feedback on how I am performing (through the scoring system).                          | Yes                  | ![Scoring counter](assets/ReadMe%20images/scoring.png)             |
 | If I get a wrong answer, to be able to see what is the correct answer.                                | Yes                  | ![Incorrect option](assets/ReadMe%20images/incorrect_option.png)   |
 | To see my final score and get feedback on whether this is a good score.                               | Yes                  | ![Results screen (pass)](assets/ReadMe%20images/results_pass.png)  |
-| To have fun playing the game and feel a positive Christmas spirit having played!                      | Dependent on player! |                                                                    |
 
 ## Browser Testing <a name="browser-testing"></a>
-The website was tested by myself on a range of modern browsers including Chrome, Edge, Brave and Firefox. Load times were generally quick and no specific issues were encountered during this phase of testing.
+The website was tested by myself on a range of modern browsers including Chrome, Edge and Brave. Load times were generally quick and no specific issues were encountered during this phase of testing.
+
+- Chrome testing
+[Chrome test](assets/Testing%20images/chrome_testing.png)
+
+- Edge testing
+[Edge test](assets/Testing%20images/edge_testing.png)
+
+- Brave testing
+[Brave test](assets/Testing%20images/brave_testing.png)
 
 ## Compatability and Responsiveness Testing <a name="compatability-responsiveness-testing"></a>
 The website was tested on various monitors including a 27 inch monitor (3840 x 2160), a laptop (1920 x 1080), an iPhone 13 Pro (390 x 844) and an iPad (1536 x 2048). All media queries coded in CSS executed correctly when required.

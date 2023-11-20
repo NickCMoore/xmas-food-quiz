@@ -113,7 +113,7 @@ Google Fonts was used to select a blend of fonts which would compliment each oth
 
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - JavaScript used for game functions and logic.
 
-* [Github](https://github.com/) - GitHub was used to store, manage, track and control code changes for the quiz.
+* [GitHub](https://github.com/) - GitHub was used to store, manage, track and control code changes for the quiz.
 
 * [Gitpod](https://www.gitpod.io/) - Gitpod was used for website deployment.
 
@@ -188,13 +188,13 @@ The user is able to click exit upon entering the question screen, but they are u
 
 **Fail result**
 
-If the user score less than 100 points (10 correct questions out of 20), they will be presented with the fail screen. This is intended to be light hearted and presents the user with a consoling message and also a picture of some sad people around the Christmas table!
+If the user score fewer than 100 points (10 correct questions out of 20), they will be presented with the fail screen. This is intended to be light hearted and presents the user with a consoling message and also a picture of some sad people around the Christmas table!
 
 ![Results screen (fail)](assets/ReadMe%20images/results_fail.png)
 
 **Pass result**
 
-If the user score less more than 100 points, (11 or more questions correct out of 20), they will be presented with a pass screen. Once again, this is intended to be fun and the user is congratulated on their score and shown a picture of some VERY happy people around the Christmas table!
+If the user score more than 100 points, (11 or more questions correct out of 20), they will be presented with a pass screen. Once again, this is intended to be fun and the user is congratulated on their score and shown a picture of some VERY happy people around the Christmas table!
 
 ![Results screen (pass)](assets/ReadMe%20images/results_pass.png)
 
@@ -268,4 +268,4 @@ The method from cloning a project from GitHub is below:
 
 ### Acknowledgments <a name="acknowledgements"></a>
 
-* My mentor, Jack Wachira, for his continious helpful feedback. I would like to thank the Slack community and all at the Code Institute for their help and support. Thanks also go to my friends and family for providing feedback and help with the user testing cases.
+My mentor, Jack Wachira, for his continuous helpful feedback. I would like to thank the Slack community and all at the Code Institute for their help and support. Thanks also go to my friends and family for providing feedback and help with the user testing cases.
