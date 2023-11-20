@@ -87,7 +87,7 @@ No errors were found using this CSS valildator.
 ![W3C CSS Validator](assets/Testing%20images/W3C_CSS.png)
 
 ### JSHint JavaScript Linter Results <a name="linter-results"></a>
-As a result of the [JSHint](https://jshint.com/) Linter JavaScript testing, 12 warnings and one 'unused variable' flag cropped up. These were simple bug fixes - the missing semicolons were inserted into the relevant lines of code and the 'optionList' variable in line 19 was removed from the JS code.
+As a result of the [JSHint](https://jshint.com/) Linter JavaScript testing, 12 warnings and one 'unused variable' flag cropped up. These were simple bug fixes - the missing semicolons were inserted into the relevant lines of code and the 'optionList' variable in line 19 was removed from the JS code. The separate [JS questions](assets/scripts/questions.js) file was also run through this Linter with no issues.
 
 **JSHint Linter testing**
 
