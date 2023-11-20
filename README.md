@@ -1,8 +1,8 @@
 # Christmas Food Quiz
 
-This website is aimed at users who want to play a fun, interactive multiple choice quiz during the Christmas period. The aim of the website is to get users into the Christmas spirit but testing their knowledge of various Christmas foods from around the world.
+This website has a target audience which is users who want to play a fun, interactive multiple choice quiz during the Christmas period. The aim of the website is to get users into the Christmas spirit but testing their knowledge of various Christmas foods from around the world.
 
-The purpose of the project is to demonstrate knowledge of how to produce a user friendly, responsive and interactive quiz using predominantly JavaScript, but supported with HTML and CSS.
+The key goal of the project is to demonstrate knowledge of how to produce a user friendly, responsive and interactive quiz using predominantly JavaScript, but supported with HTML and CSS.
 
 [Link to live website](https://nickcmoore.github.io/xmas-food-quiz/)
 
