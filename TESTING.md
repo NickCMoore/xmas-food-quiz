@@ -119,14 +119,8 @@ To further validate the website from a performance, accessibility, best practice
 
 The results were as follows:
 
-__Desktop__
+I was very pleased with the Lighthouse report scores across the board after considerable work resizing the images and making the quiz as accessible as possible.
 
 ![Lighthouse](assets/Testing%20images/lighthouse_desktop.png)
-
-__Mobile__
-
-![Lighthouse mobile]()
-
-[def]: media/lighthouse.png
 
 Click [here](README.md) to return to the ReadMe file.
