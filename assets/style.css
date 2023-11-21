@@ -473,13 +473,13 @@ body {
     }
 
     .rules-display {
-        height: 92%;
+        height: 94%;
     }
 
     .question-display,
     .results-display {
         width: 95%;
-        height: 96%;
+        height: 98%;
     }
 
     .results-display {
@@ -494,7 +494,7 @@ body {
     }
 
     .rules-display .rules {
-        font-size: 22px;
+        font-size: 23px;
         padding: 1px;
         margin: 12px;
     }
@@ -513,7 +513,7 @@ body {
     }
 
     .question-display .question-area .question {
-        font-size: 25px;
+        font-size: 27px;
     }
 
     .question-display .multiple-choice-area {
@@ -529,7 +529,7 @@ body {
 
     .question-display .multiple-choice-area .answer-option {
         display: block;
-        font-size: 20px;
+        font-size: 22px;
         padding: 5px;
         margin: 10px;
         width: 41%;
@@ -541,7 +541,7 @@ body {
     }
 
     .question-display .player-score h3 {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 200;
     }
 

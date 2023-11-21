@@ -274,7 +274,7 @@ function endGame() {
         document.getElementById('results-page-image').src = 'assets/images/sad_dinner.webp';
     } else {
         finalUserScoreMessage.innerHTML = ` Congratulations! Your final score is:`;
-        document.getElementById('results-page-image').src = 'assets/images/happy_dinner.webp';
+        document.getElementById('results-page-image').src = 'assets/images/happy_dinner_v2.webp';
     }
     finalUserScore.innerHTML = `${score}`;
 }
