@@ -2,7 +2,7 @@
 
 This website has a target audience of users who want to play a fun, interactive multiple choice quiz during the Christmas period. The aim of the website is to get users into the Christmas spirit whilst also testing their knowledge of various Christmas foods from around the world.
 
-The key goal of the project is to demonstrate knowledge of how to produce a user friendly, responsive and interactive quiz using predominantly JavaScript, but supported with HTML and CSS.
+The key goal of the project from a development perspective is to demonstrate knowledge of how to produce a user friendly, responsive and interactive quiz using predominantly JavaScript, but supported with HTML and CSS.
 
 [Christmas Food Quiz](https://nickcmoore.github.io/xmas-food-quiz/)
 
@@ -95,7 +95,7 @@ I used [Balsamiq](https://balsamiq.com/) to create wireframes for the various pa
 
 **Colour Scheme** <a name="colour-scheme"></a>
 
-By using the [Coolors](https://coolors.co/08415c-cc2936-6b818c-f1bf98) website, I was able to select a colour palette that would be suitable for all users and visually appealing. The scheme contains colours which are traditionally associated with Christmas, particularly #08415C and #CC2936. #6B818C was useful for providing user feedback on button hovers. These colours work well together to immerse the user in the game, strengthening that association with Christmas.
+By using the [Coolors](https://coolors.co/08415c-cc2936-6b818c-f1bf98) website, I was able to select a colour palette that would be suitable for all users and visually appealing. The scheme contains warm and inviting colours which are traditionally associated with Christmas, particularly #08415C and #CC2936. #6B818C was useful for providing user feedback on button hovers. These colours work well together to immerse the user in the game, strengthening that association with Christmas.
 
 ![Colour Scheme](assets/ReadMe%20images/colour_scheme.png)
 
