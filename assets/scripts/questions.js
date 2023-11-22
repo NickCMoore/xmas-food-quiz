@@ -102,7 +102,7 @@ let questions = [
         optionC: "Galette des Rois",
         optionD: "Pain d'épices",
         correctAnswer: "B",
-        img: "buche.jpg"
+        img: "buche.webp"
     },
 
     {
@@ -146,7 +146,7 @@ let questions = [
         optionC: "Cod",
         optionD: "Salmon",
         correctAnswer: "C",
-        img: "feast.jpg"
+        img: "feast.webp"
     },
 
     {
@@ -168,7 +168,7 @@ let questions = [
         optionC: "Rosca de Reyes",
         optionD: "Pandoro",
         correctAnswer: "C",
-        img: "rosca.jpg"
+        img: "rosca.webp"
     },
 
     {
