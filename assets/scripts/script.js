@@ -55,6 +55,8 @@ questionQuitButton.onclick = () => {
     console.log('Question Quit button clicked');
     questionDisplay.classList.remove('active');
     main.classList.remove('active');
+
+    clearInterval(myInterval);
 };
 
 /**
@@ -65,6 +67,8 @@ exitButton.onclick = () => {
     console.log('Exit button clicked');
     resultsDisplay.classList.remove('active');
     main.classList.remove('active');
+
+    clearInterval(myInterval);
 
     score = 0;
     questionCount = 0;
@@ -240,16 +244,13 @@ function answerSelect(selectedOption) {
         return;
     }
 
-    // Accesses the option element by ID
     const selectedOptionElement = document.getElementById(`option${selectedOption}`);
 
-    // Checks if answer is already selected
     if (optionClicked) {
         console.log('Answer already selected. Ignoring further clicks.');
         return;
     }
 
-    // Checks if answer is right and provides feedback based on user selection
     if (selectedOption === questions[questionCount].correctAnswer) {
         selectedOptionElement.style.backgroundColor = '#4CAF50';
         score += 10;
