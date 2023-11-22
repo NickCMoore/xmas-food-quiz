@@ -114,6 +114,9 @@ As a result of the [JSHint](https://jshint.com/) Linter JavaScript testing, 12 w
 
 During the build phase of the project, I resolved a number of bugs encountered with the quiz. These resolved bugs were recorded in GitHub Commit messages.
 
+* Timer function still executes in background on results and home screen (when exiting the quiz). Does not cause any impact to the user playing the game and does not interfere with subsequent playthroughs. To be fixed in future releases (RESOLVED).
+* Issue with users being able to select the correct answers more than once in order to gain more points! Removed this bug in JS so that users can now only select the correct (green) option once. (RESOLVED)
+
 I performed HTML Validation testing on the site and found the following errors with the home page.
 
 ![HTML Validator testing](assets/Testing%20images/W3C_HTML.png)
@@ -125,9 +128,8 @@ Upon resolving this error in the W3C Validator, no further errors remain.
 ### Unresolved <a name="unresolved-bugs"></a>
 
 * Performance at mobile resolutions slightly impacted by large contentful paints load times. Have somewhat addressed this through resizing of images for mobile.
-* Some issues with answer option alignment at tablet resolutions. The issue was with the options being impacted by other containers on the page.
-* Sometimes, navigation options would appear beyond the question area for larger questions on some devices. For most devices and resolutions this has been fixed, but it may remain for some screens. Extending the question area and reducing the font size on the questions working to some extent but had an effect on larger devices within the tablet media query range. This meant that the text would then appear too small on these devices and the question area would have too much dead space. Hopefully a compromise has been reached which prevents buttons going beyond the view area on smaller tablets but also keeping the text a decent size on larger tablets. The range of the media query is not too large, so this workaround should hopefully provide a good solution for most devices.
-* Timer function still executes in background on results and home screen (when exiting the quiz). Does not cause any impact to the user playing the game and does not interfere with subsequent playthroughs. To be fixed in future releases.
+* Some issues with answer option alignment for tablet devices. The issue was with the options being impacted by other containers on the page.
+* Sometimes, navigation options would appear beyond the question area for larger questions on some devices. For most devices and resolutions this has been fixed, but it may remain for some screens (tablet and laptop resolutions which had larger widths but smaller heights ). Extending the question area and reducing the font size on the questions working to some extent but had an effect on larger devices within the tablet media query range. This meant that the text would then appear too small on these devices and the question area would have too much dead space. Hopefully a compromise has been reached which prevents buttons going beyond the view area on smaller tablets but also keeping the text a decent size on larger tablets. The range of the media query is not too large, so this workaround should hopefully provide a good solution for most devices.
 * Issue with favicons only loading on live server version of the quiz and not on deployed link.
 
 ## Further Testing <a name="further-testing"></a>
