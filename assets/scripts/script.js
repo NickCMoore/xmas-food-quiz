@@ -35,6 +35,9 @@ quitButton.onclick = () => {
     console.log('Quit button clicked');
     rulesDisplay.classList.remove('active');
     main.classList.remove('active');
+
+    clearInterval(myInterval);
+    console.log('Timer cleared');
 };
 
 /**
@@ -57,6 +60,9 @@ questionQuitButton.onclick = () => {
     main.classList.remove('active');
 
     clearInterval(myInterval);
+    console.log('Timer cleared');
+
+
 };
 
 /**
@@ -69,13 +75,7 @@ exitButton.onclick = () => {
     main.classList.remove('active');
 
     clearInterval(myInterval);
-
-    score = 0;
-    questionCount = 0;
-
-    updateScore();
-
-    showQuestions(0);
+    console.log('Timer cleared');
 };
 
 /**
@@ -145,6 +145,7 @@ function timer() {
     } else {
         timeout();
         clearInterval(myInterval);
+        console.log('Timer cleared');
     }
 }
 
@@ -186,6 +187,7 @@ function showQuestions(index) {
     console.log('Showing question:', index + 1);
 
     clearInterval(myInterval);
+    console.log('Timer cleared');
     counter = 0;
 
     questionPic.setAttribute('src', "assets/images/" + questions[index].img);
@@ -281,6 +283,9 @@ function endGame() {
     console.log("Moving to results page");
     questionDisplay.classList.remove('active');
     resultsDisplay.classList.add('active');
+
+    clearInterval(myInterval);
+    console.log('Timer cleared');
 
     if (score <= 100) {
         finalUserScoreMessage.innerHTML = `Oh no! You only scored ${score}. Better luck next time!`;
