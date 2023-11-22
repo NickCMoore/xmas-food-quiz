@@ -243,6 +243,12 @@ function answerSelect(selectedOption) {
     // Accesses the option element by ID
     const selectedOptionElement = document.getElementById(`option${selectedOption}`);
 
+    // Checks if answer is already selected
+    if (optionClicked) {
+        console.log('Answer already selected. Ignoring further clicks.');
+        return;
+    }
+
     // Checks if answer is right and provides feedback based on user selection
     if (selectedOption === questions[questionCount].correctAnswer) {
         selectedOptionElement.style.backgroundColor = '#4CAF50';
@@ -256,6 +262,12 @@ function answerSelect(selectedOption) {
         selectedOptionElement.style.backgroundColor = '#FF5252';
         console.log('Wrong. Current score: ' + score);
     }
+
+    const optionButtons = document.querySelectorAll('.answer-option');
+    optionButtons.forEach(button => {
+        button.disabled = true;
+    });
+
     optionClicked = true;
     stopOptionsOnClick = false;
 }
