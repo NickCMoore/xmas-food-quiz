@@ -61,8 +61,27 @@ questionQuitButton.onclick = () => {
 
     clearInterval(myInterval);
     console.log('Timer cleared');
+};
 
+/**
+ * Event handler for the "Next" button.
+ * Allows the player to move to the next question.
+ */
+nextButton.onclick = () => {
+    if (optionClicked) {
+        console.log('Next button clicked');
+        stopOptionsOnClick = false;
 
+        if (questionCount === questions.length - 1) {
+            endGame(); // Call the function to display results
+        } else {
+            questionCount = (questionCount + 1) % questions.length;
+            showQuestions(questionCount);
+        }
+        optionClicked = false;
+    } else {
+        console.log('Click an answer before moving forwards');
+    }
 };
 
 /**
@@ -92,26 +111,7 @@ tryAgainButton.onclick = () => {
     showQuestions(0);
 };
 
-/**
- * Event handler for the "Next" button.
- * Allows the player to move to the next question.
- */
-nextButton.onclick = () => {
-    if (optionClicked) {
-        console.log('Next button clicked');
-        stopOptionsOnClick = false;
 
-        if (questionCount === questions.length - 1) {
-            endGame(); // Call the function to display results
-        } else {
-            questionCount = (questionCount + 1) % questions.length;
-            showQuestions(questionCount);
-        }
-        optionClicked = false;
-    } else {
-        console.log('Click an answer before moving forwards');
-    }
-};
 
 /**
  * Variables to track the quiz and user's progress.
