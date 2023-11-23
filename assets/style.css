@@ -14,10 +14,10 @@ body {
     min-height: 100vh;
 }
 
-/* Main section styling */
+/* Main section */
 .main {
     min-height: 100vh;
-    background-image: url(../assets//images/Christmas_meal_main-v2.webp);
+    background-image: url(../assets/images/Christmas_meal_main-v2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -44,7 +44,7 @@ body {
     flex-direction: column;
 }
 
-/* Styles for heading and paragraph within game content */
+/* Styles for heading and paragraph in game content */
 .game-content h1 {
     font-size: 90px;
     font-weight: 500;
@@ -56,7 +56,7 @@ body {
     margin-bottom: 45px;
 }
 
-/* Button styles */
+/* Buttons */
 .game-content .start-button {
     display: inline-block;
     width: 23%;
@@ -79,7 +79,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Styles for specific display buttons */
 .rules-display .rules-buttons .quit-button,
 .question-display .question-buttons .question-quit-button,
 .results-display .finished-buttons .exit-button,
@@ -112,7 +111,7 @@ body {
     color: #000;
 }
 
-/* Display styles */
+/* Display */
 .rules-display,
 .question-display,
 .results-display {
@@ -127,7 +126,7 @@ body {
     pointer-events: none;
 }
 
-/* Display heading styling */
+/* Display heading */
 .rules-display h2,
 .question-display h3,
 .results-display h3 {
@@ -135,7 +134,7 @@ body {
     text-align: center;
 }
 
-/* Display heading styling (active) */
+/* Display styling (active) */
 .rules-display.active,
 .question-display.active,
 .results-display.active {
@@ -143,7 +142,7 @@ body {
     pointer-events: auto;
 }
 
-/* Styles for specific display elements */
+/* Rules */
 .rules-display .rules {
     display: inline-block;
     align-items: center;
@@ -152,6 +151,7 @@ body {
     margin-bottom: 35px;
 }
 
+/* Timer */
 #timer-section {
     display: flex;
     justify-content: center;
@@ -165,6 +165,7 @@ body {
     font-size: 50px;
 }
 
+/* Question area */
 .question-display .question-area .question {
     display: inline-block;
     align-items: center;
@@ -182,6 +183,7 @@ body {
     margin: 35px;
 }
 
+/* Answer area */
 .question-display .multiple-choice-area .answer-option {
     display: flex;
     align-items: center;
@@ -193,6 +195,7 @@ body {
     cursor: pointer;
 }
 
+/* Question area */
 .question-display .question-area .food-pic,
 .results-display .results-page-image {
     display: block;
@@ -201,6 +204,7 @@ body {
     border-radius: 10px;
 }
 
+/* Player score */
 .question-display .player-score h3 {
     align-items: center;
     font-size: 50px;
@@ -208,6 +212,7 @@ body {
     font-weight: 200;
 }
 
+/* Final message */
 .results-display .final-user-score-message {
     display: flex;
     align-items: center;
@@ -217,6 +222,7 @@ body {
     font-weight: 200;
 }
 
+/* Final score */
 .results-display .final-user-score {
     display: flex;
     justify-content: center;
@@ -496,8 +502,7 @@ body {
         margin: 5px
     }
 
-    .question-display.active .question-area,
-    .results-display.active .question-area {
+    .question-area.active {
         padding: 2px;
     }
 
@@ -520,7 +525,6 @@ body {
     }
 
     #timer-section {
-        display: inline-block;
         margin: 1px;
     }
 
